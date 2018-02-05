@@ -2,22 +2,24 @@
 #define CAMERA_H
 
 #include <QObject>
+#include "filedatabase.h"
 #include "QJsonObject"
 #include "videosource.h"
 #include "videoprocessor.h"
-class Camera : public QObject
+class Camera : public QThread
 {
     Q_OBJECT
 public:
-    explicit Camera(QJsonObject config,QObject *parent = 0);
+    explicit Camera(QJsonObject config);
     ~Camera()
     {
 
     }
-    void start()
+    void start_cam()
     {
         src=new VideoSource(cfg);
         processor=new VideoProcessor;
+        start();
      //   src->start();
     }
     void stop()
@@ -36,6 +38,14 @@ public:
     {
 
     }
+protected:
+    void run()
+    {
+        while(1){
+            prt(info,"runing %s");
+            QThread::sleep(1);
+        }
+    }
 
 signals:
 
@@ -43,7 +53,7 @@ public slots:
 private:
     VideoSource *src;
     VideoProcessor *processor;
-    QJsonObject cfg;
+  //  QJsonObject cfg;
   //  QString url
 };
 //class FvdCamera:public Cam

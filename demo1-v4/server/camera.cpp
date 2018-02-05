@@ -1,8 +1,9 @@
 #include "camera.h"
 
-Camera::Camera(QJsonObject config,QObject *parent) : QObject(parent)
+Camera::Camera(QJsonObject config)
 {
-    cfg=config;
-    start();
+   // cfg=config;
+    set_config(config);
+    start_cam();
 }
 
