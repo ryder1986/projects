@@ -1,0 +1,1877 @@
+[Mon Feb  5 17:52:40 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Mon Feb  5 17:52:40 2018][info][client.h,93,connect_to_server]===>connecting 192.168.1.216
+[Mon Feb  5 17:52:40 2018][info][client.h,65,handle_server_msg]===>get 705 bytes 
+[Mon Feb  5 17:52:40 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Mon Feb  5 17:52:40 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Mon Feb  5 17:52:42 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Mon Feb  5 17:52:42 2018][info][formcameratext.h,24,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Mon Feb  5 17:52:42 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Mon Feb  5 17:52:44 2018][info][videowidget.h,29,mouse_press]===>valid point
+[Mon Feb  5 17:52:44 2018][info][videowidget.h,416,mousePressEvent]===>(pres:2,2)
+[Mon Feb  5 17:52:44 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(6,6)
+[Mon Feb  5 17:52:44 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(7,8)
+[Mon Feb  5 17:52:44 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(8,9)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(11,11)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(14,13)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(23,19)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(26,23)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(30,27)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(31,27)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(33,29)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(35,30)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(37,33)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(38,34)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(39,35)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(46,38)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(49,39)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(50,39)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(52,41)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(54,42)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(54,44)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(54,45)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(53,46)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(53,46)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,29,mouse_press]===>valid point
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,416,mousePressEvent]===>(pres:53,46)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(53,47)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(55,54)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(56,57)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(59,61)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(59,64)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(60,69)
+[Mon Feb  5 17:52:45 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(68,79)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(76,91)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(85,104)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(94,113)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(98,119)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(105,132)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(105,135)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,136)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,137)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,138)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(107,139)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(108,140)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(109,141)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(110,142)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(111,142)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(112,142)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(112,141)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(112,140)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(114,139)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(114,139)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,29,mouse_press]===>valid point
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,416,mousePressEvent]===>(pres:114,139)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(114,137)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(115,137)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(116,138)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(114,137)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(107,129)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(105,127)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(102,123)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(99,120)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(92,116)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(85,110)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(79,106)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(72,101)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(64,94)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(56,88)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(48,82)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(14,61)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-1,52)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-13,41)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-18,36)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-25,29)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-32,25)
+[Mon Feb  5 17:52:46 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-39,20)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-41,18)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-42,16)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-43,14)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-41,13)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-35,13)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-28,13)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-22,13)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-13,13)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-3,13)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(4,12)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(10,12)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(16,9)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(18,9)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(19,8)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,7)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,6)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,3)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,1)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,-1)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,-2)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,-3)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(20,-5)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(18,-5)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(16,-4)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(12,-2)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(8,0)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(4,1)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(0,5)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-2,6)
+[Mon Feb  5 17:52:47 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-2,7)
+[Mon Feb  5 17:52:48 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(-1,7)
+[Mon Feb  5 17:52:48 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(0,5)
+[Mon Feb  5 17:52:48 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(1,5)
+[Mon Feb  5 17:52:48 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(1,5)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,29,mouse_press]===>valid point
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,416,mousePressEvent]===>(pres:3,5)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(4,9)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(5,10)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(7,15)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(9,17)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(11,21)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(12,23)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(13,24)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(17,27)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(18,29)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(20,32)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,33)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(23,35)
+[Mon Feb  5 17:52:49 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(26,38)
+[Mon Feb  5 17:52:50 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(27,39)
+[Mon Feb  5 17:52:50 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(29,42)
+[Mon Feb  5 17:52:50 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(29,42)
+[Mon Feb  5 17:52:50 2018][info][videowidget.h,29,mouse_press]===>valid point
+[Mon Feb  5 17:52:50 2018][info][videowidget.h,416,mousePressEvent]===>(pres:26,37)
+[Mon Feb  5 17:52:50 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(24,34)
+[Mon Feb  5 17:52:50 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(24,32)
+[Mon Feb  5 17:52:50 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(23,31)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(23,28)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(22,27)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(22,26)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,25)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(18,21)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(18,20)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(17,19)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(17,18)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(14,16)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(13,13)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(12,12)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(10,9)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(9,8)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(8,7)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(7,7)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(4,5)
+[Mon Feb  5 17:52:51 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(3,5)
+[Mon Feb  5 17:52:52 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(3,5)
+[Mon Feb  5 17:52:53 2018][info][videowidget.h,416,mousePressEvent]===>(pres:245,218)
+[Mon Feb  5 17:52:54 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(245,218)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,29,mouse_press]===>valid point
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,416,mousePressEvent]===>(pres:4,3)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(5,3)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(7,4)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(8,5)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(10,8)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(14,14)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(17,19)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(21,24)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(25,30)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(32,35)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(36,43)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(43,51)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(49,58)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(55,64)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(62,72)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(108,112)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(121,123)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(130,130)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(135,135)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(141,141)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(143,143)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(144,144)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(145,146)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(145,148)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(147,151)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(147,153)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(149,156)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(151,160)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(152,163)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,165)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(158,173)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(160,177)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(162,185)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(164,189)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(171,202)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(175,206)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(179,210)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(181,214)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(183,218)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(185,220)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(186,221)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(187,222)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(188,223)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(187,222)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(186,221)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(184,219)
+[Mon Feb  5 17:53:07 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(183,218)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(183,216)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(181,214)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(180,212)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(179,210)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(178,207)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(177,206)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(175,205)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(174,204)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(173,203)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(172,202)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(171,201)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(170,200)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(169,198)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(168,197)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(167,196)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(166,195)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(165,193)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(164,192)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(163,191)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(162,189)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(161,188)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(160,187)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(157,185)
+[Mon Feb  5 17:53:08 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(157,185)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,29,mouse_press]===>valid point
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,416,mousePressEvent]===>(pres:154,188)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,187)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,186)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,185)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,183)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,182)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,181)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,180)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,179)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,172)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,168)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,165)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,162)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,160)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,159)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,155)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,152)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,150)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,149)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,145)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(154,137)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(142,120)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(133,109)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(129,101)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(127,95)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(126,94)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(125,91)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(125,88)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(123,86)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(122,84)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(122,79)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(121,77)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(121,76)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(121,74)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(120,71)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(120,70)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,69)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,68)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,67)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,66)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,65)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,63)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,62)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,61)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,60)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,59)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,58)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,57)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,56)
+[Mon Feb  5 17:53:10 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(119,56)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,29,mouse_press]===>valid point
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,416,mousePressEvent]===>(pres:121,53)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(120,54)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(119,55)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(115,59)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(113,60)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(109,65)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(108,66)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,68)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,69)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,70)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,72)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,73)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,74)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(106,75)
+[Mon Feb  5 17:53:11 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(106,75)
+[Mon Feb  5 17:53:12 2018][info][videowidget.h,416,mousePressEvent]===>(pres:96,198)
+[Mon Feb  5 17:53:12 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(97,199)
+[Mon Feb  5 17:53:12 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(103,197)
+[Mon Feb  5 17:53:12 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(104,196)
+[Mon Feb  5 17:53:12 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(104,196)
+[Tue Feb  6 09:34:07 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 09:34:07 2018][info][client.h,93,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 09:34:07 2018][info][client.h,65,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 09:34:07 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 09:34:07 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 09:34:09 2018][info][videowidget.h,416,mousePressEvent]===>(pres:121,206)
+[Tue Feb  6 09:34:09 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(121,204)
+[Tue Feb  6 09:34:09 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(121,203)
+[Tue Feb  6 09:34:09 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(120,202)
+[Tue Feb  6 09:34:10 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(120,202)
+[Tue Feb  6 09:36:49 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 09:36:49 2018][info][client.h,93,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 09:36:50 2018][info][client.h,65,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 09:36:50 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 09:36:50 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 09:36:52 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 09:36:52 2018][info][formcameratext.h,24,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 09:36:52 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 09:36:53 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 09:36:53 2018][info][formcameratext.h,24,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 09:36:53 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 09:36:54 2018][info][videowidget.h,416,mousePressEvent]===>(pres:245,157)
+[Tue Feb  6 09:36:54 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(244,158)
+[Tue Feb  6 09:36:54 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(244,158)
+[Tue Feb  6 10:16:26 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 10:16:26 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 10:16:26 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:16:26 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:16:26 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:16:34 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 10:16:34 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:16:34 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:16:34 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:16:34 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:17:01 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 10:17:01 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:17:01 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:17:01 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:17:01 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:17:03 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 10:17:03 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:17:03 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:17:03 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:17:03 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:17:06 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:4
+[Tue Feb  6 10:17:06 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:17:06 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:17:06 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:17:06 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:17:09 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 10:17:09 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:17:09 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:17:09 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:17:09 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:17:13 2018][info][videowidget.h,416,mousePressEvent]===>(pres:74,169)
+[Tue Feb  6 10:17:13 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(74,169)
+[Tue Feb  6 10:17:20 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 10:17:20 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:17:20 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:17:20 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:17:20 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:18:25 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 10:18:25 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 10:18:26 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:18:26 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:18:26 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:18:27 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 10:18:27 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:18:27 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:18:27 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:18:27 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:20:01 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 10:20:01 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 10:20:01 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:20:01 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:20:01 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:20:02 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 10:20:02 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:20:04 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 10:20:04 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:20:10 2018][info][videowidget.h,416,mousePressEvent]===>(pres:91,336)
+[Tue Feb  6 10:20:10 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(91,336)
+[Tue Feb  6 10:32:02 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 10:32:02 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 10:32:03 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:32:03 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:32:03 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:32:04 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 10:32:04 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 10:32:04 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 10:32:04 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 10:32:04 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 13:28:37 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 13:28:37 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 13:28:38 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 13:28:38 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 13:28:38 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 13:28:40 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 13:28:40 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 13:28:40 2018][info][formdevicedetail.h,58,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 13:28:42 2018][info][videowidget.h,416,mousePressEvent]===>(pres:243,132)
+[Tue Feb  6 13:28:42 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(243,132)
+[Tue Feb  6 13:30:56 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 13:30:56 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 13:30:56 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 13:30:56 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 13:30:56 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 13:30:58 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 13:30:58 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 13:30:58 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 13:31:02 2018][info][videowidget.h,416,mousePressEvent]===>(pres:123,115)
+[Tue Feb  6 13:31:02 2018][info][videowidget.h,464,mouseMoveEvent]===>mv:(124,116)
+[Tue Feb  6 13:31:02 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(124,116)
+[Tue Feb  6 13:38:27 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 13:38:27 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 13:38:27 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 13:38:29 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 13:38:29 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 13:38:54 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 13:38:54 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 13:38:55 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 13:38:57 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 13:38:57 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:00:08 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 14:00:08 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 14:00:09 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:00:13 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:00:13 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:01:15 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 14:01:15 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 14:01:16 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:01:16 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:16 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:01:18 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:01:18 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:18 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:01:20 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 14:01:20 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:20 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:01:20 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:20 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:01:24 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 14:01:24 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:24 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:01:24 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:24 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:01:35 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 14:01:35 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:35 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:01:35 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:35 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:01:40 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 14:01:40 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:01:40 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:01:40 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:40 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:01:43 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 14:01:43 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:43 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:01:43 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:43 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:01:48 2018][info][videowidget.h,416,mousePressEvent]===>(pres:48,229)
+[Tue Feb  6 14:01:48 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(48,229)
+[Tue Feb  6 14:01:55 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 14:01:55 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 14:01:56 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:01:58 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:01:58 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:02:03 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 14:02:13 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:02:13 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:05:07 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 14:05:07 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 14:05:07 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:05:07 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:05:07 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:05:09 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 14:05:09 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:05:09 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:05:09 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:05:09 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:05:31 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 14:05:31 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:05:31 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:05:31 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:05:31 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:07:38 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 14:07:38 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 14:07:39 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:07:47 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:07:47 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:07:50 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 14:12:01 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 14:12:01 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 14:12:02 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 14:12:02 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:12:02 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:12:03 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 14:12:03 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 14:12:03 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 14:12:10 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 14:12:10 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 14:12:10 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 15:07:43 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 15:07:43 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 15:07:44 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 15:07:44 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 15:07:44 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 15:07:45 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 15:07:45 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 15:07:45 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 15:07:46 2018][info][videowidget.h,416,mousePressEvent]===>(pres:331,133)
+[Tue Feb  6 15:07:46 2018][info][videowidget.h,459,mouseReleaseEvent]===>rls:(331,133)
+[Tue Feb  6 15:34:00 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 15:34:00 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 15:34:01 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 15:34:01 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 15:34:01 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 15:34:03 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 15:34:03 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 15:34:03 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 15:34:16 2018][info][client.h,112,displayError]===>err when connecting to server
+[Tue Feb  6 15:36:15 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 15:36:15 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 15:36:16 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 15:36:16 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 15:36:16 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 15:36:23 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 15:36:23 2018][info][formcameragra.h,73,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 15:36:23 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 15:36:36 2018][info][client.h,112,displayError]===>err when connecting to server
+[Tue Feb  6 16:12:06 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:12:06 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:12:06 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:12:06 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:12:06 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:12:08 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 16:12:08 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:12:08 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:12:36 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:12:36 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:12:36 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:12:36 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:12:36 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:12:39 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 16:12:39 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:12:39 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:12:47 2018][info][videowidget.h,490,mousePressEvent]===>(pres:13,17)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,533,mouseReleaseEvent]===>rls:(13,17)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,89,mouse_press]===>valid point
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,490,mousePressEvent]===>(pres:3,0)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(3,1)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(3,4)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(3,5)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(3,6)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(3,7)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(3,8)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(3,9)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(3,11)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(3,14)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(4,15)
+[Tue Feb  6 16:12:48 2018][info][videowidget.h,533,mouseReleaseEvent]===>rls:(4,15)
+[Tue Feb  6 16:12:49 2018][info][videowidget.h,89,mouse_press]===>valid point
+[Tue Feb  6 16:12:49 2018][info][videowidget.h,490,mousePressEvent]===>(pres:7,15)
+[Tue Feb  6 16:12:49 2018][info][videowidget.h,533,mouseReleaseEvent]===>rls:(7,15)
+[Tue Feb  6 16:12:49 2018][info][videowidget.h,490,mousePressEvent]===>(pres:33,16)
+[Tue Feb  6 16:12:49 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(34,17)
+[Tue Feb  6 16:12:49 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(35,18)
+[Tue Feb  6 16:12:49 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(37,19)
+[Tue Feb  6 16:12:49 2018][info][videowidget.h,533,mouseReleaseEvent]===>rls:(37,19)
+[Tue Feb  6 16:12:50 2018][info][videowidget.h,490,mousePressEvent]===>(pres:112,104)
+[Tue Feb  6 16:12:50 2018][info][videowidget.h,533,mouseReleaseEvent]===>rls:(112,104)
+[Tue Feb  6 16:12:50 2018][info][videowidget.h,490,mousePressEvent]===>(pres:141,127)
+[Tue Feb  6 16:12:50 2018][info][videowidget.h,533,mouseReleaseEvent]===>rls:(141,127)
+[Tue Feb  6 16:14:09 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:14:09 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:14:09 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:14:09 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:14:09 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:14:11 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 16:14:11 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:14:11 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:15:51 2018][info][client.h,112,displayError]===>err when connecting to server
+[Tue Feb  6 16:16:13 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:16:13 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:16:13 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:16:13 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:16:13 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:16:15 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 16:16:15 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:16:15 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:18:38 2018][info][client.h,112,displayError]===>err when connecting to server
+[Tue Feb  6 16:19:04 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:19:04 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:19:05 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:19:05 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:19:05 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:19:06 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 16:19:06 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:19:06 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:21:48 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:21:48 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:21:49 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:21:49 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:21:49 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:21:50 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 16:21:50 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:21:51 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:22:52 2018][info][client.h,136,send]===>send -1 bytes in state 0 , 9 bytes left
+[Tue Feb  6 16:22:52 2018][info][client.h,28,get_config]===>fail send
+[Tue Feb  6 16:22:52 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:22:52 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:22:53 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:22:53 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:22:53 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:22:54 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 16:22:54 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:22:54 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:23:01 2018][info][videowidget.h,490,mousePressEvent]===>(pres:7,21)
+[Tue Feb  6 16:23:01 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(8,22)
+[Tue Feb  6 16:23:01 2018][info][videowidget.h,533,mouseReleaseEvent]===>rls:(8,22)
+[Tue Feb  6 16:23:01 2018][info][videowidget.h,89,mouse_press]===>valid point
+[Tue Feb  6 16:23:01 2018][info][videowidget.h,490,mousePressEvent]===>(pres:0,5)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,533,mouseReleaseEvent]===>rls:(0,5)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,89,mouse_press]===>valid point
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,490,mousePressEvent]===>(pres:2,3)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(2,5)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(2,8)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(2,10)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(2,11)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(2,13)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(2,15)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(2,17)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(6,24)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(7,26)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(8,27)
+[Tue Feb  6 16:23:02 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(9,28)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(11,28)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(14,29)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(15,29)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(28,32)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(29,33)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(31,33)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(34,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(36,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(38,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(41,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(44,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(63,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(66,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(69,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(71,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(73,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(75,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(78,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(79,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,538,mouseMoveEvent]===>mv:(80,35)
+[Tue Feb  6 16:23:03 2018][info][videowidget.h,533,mouseReleaseEvent]===>rls:(80,35)
+[Tue Feb  6 16:24:10 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:24:10 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:24:10 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:24:10 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:24:10 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:24:12 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 16:24:12 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:24:12 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:24:14 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:14 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:14 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:14 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:14 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:14 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:14 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:14 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:14 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:15 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:15 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:15 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:15 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:15 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:15 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:15 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:15 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:16 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:16 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:17 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:18 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:19 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:20 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:20 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:20 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:20 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:20 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:20 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:20 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:20 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:20 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:21 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:21 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:21 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:22 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:22 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:22 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:22 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:22 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:22 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:22 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:22 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:23 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:24 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:24:25 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:25:33 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:25:33 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:25:34 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:25:34 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:25:34 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:25:36 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 16:25:36 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:25:36 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:25:37 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:38 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:39 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:25:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:08 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:09 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:10 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:11 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:12 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:13 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:14 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:15 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:16 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:17 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:18 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:19 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:19 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:26:19 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:19 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:19 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:37 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:26:37 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:26:37 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:26:37 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:26:37 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:26:39 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 16:26:39 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:26:39 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:26:40 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:26:41 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:26:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:42 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:26:42 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:26:43 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:26:43 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:26:44 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:26:44 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:26:45 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:26:45 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:26:46 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:26:46 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:26:47 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:26:47 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:26:48 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:26:48 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:26:49 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:26:49 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:26:50 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:26:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:26:51 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:26:51 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:26:52 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:26:52 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:26:53 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:26:53 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:26:54 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:26:54 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:26:55 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:26:55 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:26:56 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:26:56 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:26:57 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:26:57 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:36 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:28:36 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:28:37 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:28:37 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:28:37 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:28:39 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8555/test1:1
+[Tue Feb  6 16:28:39 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:28:39 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:39 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:40 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:41 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:42 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:43 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:44 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:45 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:46 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:47 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:48 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:49 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:50 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:51 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:52 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:53 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:54 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:55 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:56 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:57 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:58 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:28:59 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:00 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:01 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:02 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:03 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:04 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:05 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:29:06 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 5
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 7
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,80,paint_extra]===>paint 6
+[Tue Feb  6 16:29:07 2018][info][videowidget.h,195,set_alg_rst]===>get 8
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,80,paint_extra]===>paint 7
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,195,set_alg_rst]===>get 9
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,80,paint_extra]===>paint 8
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,195,set_alg_rst]===>get 1
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,80,paint_extra]===>paint 9
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,195,set_alg_rst]===>get 2
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,80,paint_extra]===>paint 1
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,195,set_alg_rst]===>get 3
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,80,paint_extra]===>paint 2
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,195,set_alg_rst]===>get 4
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,493,mousePressEvent]===>(pres:185,176)
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,80,paint_extra]===>paint 3
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,536,mouseReleaseEvent]===>rls:(185,176)
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,195,set_alg_rst]===>get 5
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,80,paint_extra]===>paint 4
+[Tue Feb  6 16:29:08 2018][info][videowidget.h,195,set_alg_rst]===>get 6
+[Tue Feb  6 16:30:18 2018][info][formdevicedetail.cpp,19,on_pushButton_connect_clicked]===>connecting to server
+[Tue Feb  6 16:30:18 2018][info][client.h,102,connect_to_server]===>connecting 192.168.1.216
+[Tue Feb  6 16:30:18 2018][info][client.h,74,handle_server_msg]===>get 706 bytes 
+[Tue Feb  6 16:30:18 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:30:18 2018][info][formdevicedetail.h,60,trans_config]===>rtsp://192.168.1.216:8555/test1
+[Tue Feb  6 16:30:20 2018][info][formdevicedetail.cpp,38,on_treeWidget_device_doubleClicked]===>rtsp://192.168.1.216:8554/test1:0
+[Tue Feb  6 16:30:20 2018][info][formcameragra.h,75,set_camera]===>get rtsp://192.168.1.216:8554/test1
+[Tue Feb  6 16:30:20 2018][info][client.h,74,handle_server_msg]===>get 8 bytes 
