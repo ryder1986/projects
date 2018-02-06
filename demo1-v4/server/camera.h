@@ -9,6 +9,10 @@
 class Camera : public QThread
 {
     Q_OBJECT
+    typedef struct Camera_config{
+        QString url;
+        QJsonObject alg;
+    }Camera_config_t;
 public:
     explicit Camera(QJsonObject config);
     ~Camera()
@@ -17,13 +21,15 @@ public:
     }
     void start_cam()
     {
-        src=new VideoSource(cfg);
+        src=new VideoSource(cam_cfg.url);
         processor=new VideoProcessor;
         start();
      //   src->start();
     }
     void stop()
     {
+        quit=true;
+        this->wait();
         delete src;
         delete processor;
         src=NULL;
@@ -32,7 +38,8 @@ public:
 
     virtual void set_config(QJsonObject cfg)
     {
-
+        cam_cfg.url = cfg["url"].toString();
+        cam_cfg.alg=cfg["alg"].toObject();
     }
     virtual void get_config(QJsonObject cfg)
     {
@@ -42,7 +49,7 @@ protected:
     void run()
     {
         while(1){
-            prt(info,"runing %s");
+            prt(info,"runing %s",cam_cfg.url.toStdString().data());
             QThread::sleep(1);
         }
     }
@@ -53,6 +60,8 @@ public slots:
 private:
     VideoSource *src;
     VideoProcessor *processor;
+    Camera_config_t cam_cfg;
+    bool quit;
   //  QJsonObject cfg;
   //  QString url
 };

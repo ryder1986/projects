@@ -8,6 +8,10 @@ class VideoProcessor : public QObject
     Q_OBJECT
 public:
     explicit VideoProcessor(QObject *parent = 0);
+    virtual void process(char *yuv,char *ret_buf)
+    {
+
+    }
 
 signals:
 

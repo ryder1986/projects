@@ -10,6 +10,11 @@ class VideoSource : public QThread
     Q_OBJECT
 public:
     explicit VideoSource(QJsonObject config);
+    VideoSource(QString path)
+    {
+         url=path;
+    }
+
     void set_config(const QJsonObject config)
     {
         url=config["url"].toString();
