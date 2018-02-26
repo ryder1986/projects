@@ -81,8 +81,10 @@ public slots:
         int op=obj["type"].toInt();
         switch(op)
         {
-        case Protocol::GET_CONFIG:
-          //  emit get_config_done(true,ret_ba);
+        case Protocol::GET_CONFIG:\
+          {  QJsonDocument d(obj["config"].toObject());
+             emit get_config_done(true,d.toJson());
+        }
             break;
         default:break;
         }

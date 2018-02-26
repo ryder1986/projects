@@ -15,22 +15,16 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     formcameragra.cpp \
-    formcameratext.cpp \
     formdevicedetail.cpp \
-    formdevicedetree.cpp \
     client.cpp \
     videowidget.cpp
 
 HEADERS  += mainwindow.h \
     formcameragra.h \
-    formcameratext.h \
     formdevicedetail.h \
-    formdevicetree.h \
     client.h \
     videowidget.h
 
 FORMS    += mainwindow.ui \
     formcameragra.ui \
-    formcameratext.ui \
-    formdevicedetail.ui \
-    formdevicetree.ui
+    formdevicedetail.ui

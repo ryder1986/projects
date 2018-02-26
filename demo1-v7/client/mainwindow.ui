@@ -25,16 +25,6 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="FormDeviceTree" name="widget_device_tree" native="true">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>100</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="FormDeviceDetail" name="widget_device_detail" native="true"/>
        </item>
       </layout>
@@ -43,16 +33,6 @@
     <item>
      <widget class="QWidget" name="widget_camera" native="true">
       <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="FormCameraText" name="widget_camera_text" native="true">
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>70</height>
-          </size>
-         </property>
-        </widget>
-       </item>
        <item>
         <widget class="FormCameraGra" name="widget_camera_gra" native="true">
          <property name="maximumSize">
@@ -97,12 +77,6 @@
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>FormDeviceTree</class>
-   <extends>QWidget</extends>
-   <header>formdevicetree.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>FormDeviceDetail</class>
    <extends>QWidget</extends>
    <header>formdevicedetail.h</header>
@@ -112,12 +86,6 @@
    <class>FormCameraGra</class>
    <extends>QWidget</extends>
    <header>formcameragra.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>FormCameraText</class>
-   <extends>QWidget</extends>
-   <header>formcameratext.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
