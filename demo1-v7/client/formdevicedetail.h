@@ -88,7 +88,7 @@ private slots:
     void on_treeWidget_device_doubleClicked(const QModelIndex &index);
 signals:
     void camera_selected(Camera_t cfg);
-private:
+ private:
     Ui::FormDeviceDetail *ui;
 //    Client *clt;
     QByteArray config;

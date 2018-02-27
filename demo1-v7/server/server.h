@@ -20,12 +20,7 @@ public:
     }
 
 public slots:
-    void handle_request()
-    {
-
-    }
-
-    int handle_client_request(QByteArray request,QByteArray &ret)
+    int handle_client_request(QByteArray request,QByteArray &ret,void *addr)
     {
 
         QJsonDocument doc=QJsonDocument::fromJson(request);
@@ -34,16 +29,31 @@ public slots:
         QJsonObject pkg;
         switch(type)
         {
-            case Protocol::GET_CONFIG:
-                {
-                    QJsonObject config;
-                    database->get_config(config);
-                    pkg["type"]=Protocol::GET_CONFIG;
-                    pkg["config"]=config;
-                                //  camera_manager->get_config(config);
-                }
-                break;
-            default:break;
+        case Protocol::GET_CONFIG:
+        {
+            QJsonObject config;
+            database->get_config(config);
+            pkg["type"]=Protocol::GET_CONFIG;
+            pkg["config"]=config;
+            //  camera_manager->get_config(config);
+        }
+            break;
+        case Protocol::CAM_OUTPUT_OPEN:
+        {
+            ClientSession *s=(ClientSession *)addr;
+            int idx=obj["cam_index"].toInt();
+            connect(camera_manager->cameras[idx],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));break;
+            break;
+        }
+        case Protocol::CAM_OUTPUT_CLOSE:
+        {
+            ClientSession *s=(ClientSession *)addr;
+            int idx=obj["cam_index"].toInt();
+            disconnect(camera_manager->cameras[idx],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
+            break;
+        }
+
+        default:break;
         }
         QJsonDocument doc_ret(pkg);
         ret=doc_ret.toJson();
@@ -57,49 +67,15 @@ public slots:
         prt(info,"client %s:%d connected",str.toStdString().data(),skt->peerPort());
         ClientSession *client=new ClientSession(skt);
         connect(client,SIGNAL(socket_error(ClientSession*)),this,SLOT(delete_client(ClientSession*)));
-        connect(client,SIGNAL( session_operation(int,void*,int,int,char*,int&)),this,
-                SLOT(on_client_msg_recived(int,void*,int,int,char*,int&)),Qt::DirectConnection);//important,in case of competition bugs
-        connect(client,SIGNAL( client_request(QByteArray,QByteArray&)),this,
-                SLOT(handle_client_request(QByteArray,QByteArray&)),Qt::DirectConnection);//important,in case of competition bugs
+        connect(client,SIGNAL( client_request(QByteArray,QByteArray&,void *)),this,
+                SLOT(handle_client_request(QByteArray,QByteArray&,void *)),Qt::DirectConnection);//important,in case of competition bugs
+
+
         connect(skt,SIGNAL(error(QAbstractSocket::SocketError)),this,SLOT(displayError(QAbstractSocket::SocketError)));
 
         clients.append(client);
     }
-    void on_client_msg_recived(int cmd,void *addr, int len,int cam_index,char *ret_buf, int &ret_len)
-    {
-        ClientSession *s=(ClientSession *)addr;
-        int idx=clients.indexOf(s);
-        // ret_len=17;
 
-        prt(debug,"handle client cmd %d ",cmd);
-
-        switch(cmd){
-        case Protocol::GET_CONFIG:
-        {
-            QJsonObject config;
-            QJsonObject pkg;
-            pkg["type"]=Protocol::GET_CONFIG;
-            pkg["config"]=config;
-                        //  camera_manager->get_config(config);
-            database->get_config(config);
-
-            QJsonDocument doc(config);
-            QByteArray dst_config=doc.toJson();
-            memcpy(ret_buf,dst_config.data(),dst_config.size());
-            ret_len=dst_config.size();
-        }
-            break;
-        case Protocol::CAM_OUTPUT_OPEN:
-            //s->isSignalConnected()//https://www.devbean.net/2012/06/changes-to-the-meta-object-system-in-qt-5/
-            connect(camera_manager->cameras[idx],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));break;
-        case Protocol::CAM_OUTPUT_CLOSE:
-            //s->isSignalConnected()//https://www.devbean.net/2012/06/changes-to-the-meta-object-system-in-qt-5/
-            disconnect(camera_manager->cameras[idx],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
-
-            break;
-        default:break;
-        }
-    }
 
     void delete_client(ClientSession *c)
     {

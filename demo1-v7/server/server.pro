@@ -22,8 +22,7 @@ SOURCES += main.cpp \
     cameramanager.cpp \
     camera.cpp \
     processeddatasender.cpp \
-    fvdvideoprocessor.cpp \
-    packagemanager.cpp
+    fvdvideoprocessor.cpp
 
 HEADERS += \
     videoprocessor.h \
@@ -32,6 +31,5 @@ HEADERS += \
     cameramanager.h \
     camera.h \
     processeddatasender.h \
-    fvdvideoprocessor.h \
-    packagemanager.h
+    fvdvideoprocessor.h
 

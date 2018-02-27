@@ -42,53 +42,53 @@ public slots:
         int writes_num=0;
         QByteArray client_buf=skt->readAll();
         QByteArray rt;
-        emit client_request(client_buf,rt);
+        emit client_request(client_buf,rt,this);
         writes_num=skt->write(rt.data(),rt.size());
         prt(debug,"server reply %d bytes",writes_num);
     }
-    int process(char *src_buf,char*dst_buf,int size)
-    {
-        int client_cmd=Protocol::get_operation(src_buf);
-        int pkg_len=Protocol::get_length(src_buf);
-        int cam_index=Protocol::get_cam_index(src_buf);
-        int ret_size=0;
-        prt(info,"cmd %d",client_cmd);
-        switch (client_cmd) {
-        case Protocol::ADD_CAMERA:
-            emit session_operation(client_cmd,this,pkg_len,0,src_buf+Protocol::HEAD_LENGTH,ret_size);
-            break;
-        case  Protocol::GET_CONFIG:
-            emit session_operation(client_cmd,this,0,0,dst_buf,ret_size);
-         //   prt(info,"%d",ret_size);
-            break;
-        case  Protocol::SET_CONFIG:
-            emit session_operation(client_cmd,this,0,0,src_buf+Protocol::HEAD_LENGTH,ret_size);
-         //   prt(info,"%d",ret_size);
-            break;
-        case Protocol::DEL_CAMERA:
-            emit session_operation(client_cmd,this,0,cam_index,NULL,ret_size);
-            break;
-        case Protocol::MOD_CAMERA:
-            emit session_operation(client_cmd,this,pkg_len,cam_index,src_buf+Protocol::HEAD_LENGTH,ret_size);
-            break;
-        case Protocol::CAM_OUTPUT_OPEN:
-            {
-                prt(info,"focus %d",cam_index);
-                if(cam_index>0&&focus_index!=cam_index){
-                    if(focus_index>0)
-                        emit session_operation(Protocol::CAM_OUTPUT_CLOSE,this,0,focus_index,NULL,ret_size);
-                    focus_index=cam_index;
-                    emit session_operation(client_cmd,this,0,cam_index,NULL,ret_size);
-                }
-                else
-                    focus_index=0;
-            }
-            break;
-        default:
-            break;
-        }
-        return ret_size;
-    }
+//    int process(char *src_buf,char*dst_buf,int size)
+//    {
+//        int client_cmd=Protocol::get_operation(src_buf);
+//        int pkg_len=Protocol::get_length(src_buf);
+//        int cam_index=Protocol::get_cam_index(src_buf);
+//        int ret_size=0;
+//        prt(info,"cmd %d",client_cmd);
+//        switch (client_cmd) {
+//        case Protocol::ADD_CAMERA:
+//            emit session_operation(client_cmd,this,pkg_len,0,src_buf+Protocol::HEAD_LENGTH,ret_size);
+//            break;
+//        case  Protocol::GET_CONFIG:
+//            emit session_operation(client_cmd,this,0,0,dst_buf,ret_size);
+//         //   prt(info,"%d",ret_size);
+//            break;
+//        case  Protocol::SET_CONFIG:
+//            emit session_operation(client_cmd,this,0,0,src_buf+Protocol::HEAD_LENGTH,ret_size);
+//         //   prt(info,"%d",ret_size);
+//            break;
+//        case Protocol::DEL_CAMERA:
+//            emit session_operation(client_cmd,this,0,cam_index,NULL,ret_size);
+//            break;
+//        case Protocol::MOD_CAMERA:
+//            emit session_operation(client_cmd,this,pkg_len,cam_index,src_buf+Protocol::HEAD_LENGTH,ret_size);
+//            break;
+//        case Protocol::CAM_OUTPUT_OPEN:
+//            {
+//                prt(info,"focus %d",cam_index);
+//                if(cam_index>0&&focus_index!=cam_index){
+//                    if(focus_index>0)
+//                        emit session_operation(Protocol::CAM_OUTPUT_CLOSE,this,0,focus_index,NULL,ret_size);
+//                    focus_index=cam_index;
+//                    emit session_operation(client_cmd,this,0,cam_index,NULL,ret_size);
+//                }
+//                else
+//                    focus_index=0;
+//            }
+//            break;
+//        default:
+//            break;
+//        }
+//        return ret_size;
+//    }
     void update_client()
     {
 //        char bf[Pd::BUFFER_LENGTH];
@@ -120,7 +120,7 @@ public slots:
 signals :
     int get_server_config(char *buf);
     void socket_error(ClientSession *c);
-    int client_request(QByteArray request,QByteArray &ret);
+    int client_request(QByteArray request,QByteArray &ret,void *);
     //    int try_lock_server();
     void session_operation(int req,void *addr, int len,int cam_index,char *buf,int &ret_size);
 private:
