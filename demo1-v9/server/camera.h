@@ -2,6 +2,7 @@
 #define CAMERA_H
 
 #include <QObject>
+#include <QTimer>
 #include "filedatabase.h"
 #include "QJsonObject"
 #include "videosource.h"
@@ -22,12 +23,13 @@ public:
     void start_cam()
     {
         src=new VideoSource(cam_cfg.url);
-        processor=new VideoProcessor;
+        processor=new PDVideoProcessor;
         start();
      //   src->start();
     }
     void stop()
     {
+        delete tmr;
         quit=true;
         this->wait();
         delete src;
@@ -64,19 +66,28 @@ protected:
             emit output(ba);
 
             if(src->get_frame(frame)){
-                prt(info,"get a frame");
+                frame_rate++;
+                //prt(info,"get a frame");
             }else{
-                prt(info,"get no frame");
+                //prt(info,"get no frame");
             }
 
-            //processor->process();
+//            processor->process();
         }
     }
 
 signals:
     void output(QByteArray ba);
 public slots:
+    void handle_time_up()
+    {
+        prt(info,"%s framerate:%d",cam_cfg.url.toStdString().data(),frame_rate);
+        frame_rate=0;
+    }
+
 private:
+    int frame_rate;
+    QTimer *tmr;
     VideoSource *src;
     VideoProcessor *processor;
     Camera_config_t cam_cfg;

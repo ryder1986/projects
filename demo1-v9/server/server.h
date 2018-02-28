@@ -42,7 +42,7 @@ public slots:
         {
             QJsonObject config=obj["config"].toObject();
             database->set_config(config);
-            camera_manager->restart(config);
+            camera_manager->restart(config["profile"].toObject());
         }
             break;
         case Protocol::CAM_OUTPUT_OPEN:
