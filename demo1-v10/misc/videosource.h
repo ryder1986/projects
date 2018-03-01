@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QThread>
 #include <QJsonObject>
+#include <QTimer>
 #include "tool1.h"
 
 #include <opencv2/core/core.hpp>
@@ -27,12 +28,17 @@ public:
     explicit VideoSource(QJsonObject config);
     VideoSource(QString path)
     {
+        frame_rate=0;
         url=path;
+        tmr=new QTimer();
+        connect(tmr,SIGNAL(timeout()),this,SLOT(handle_time_out()));
+        tmr->start(1000);
     }
     ~VideoSource()
     {
         quit_flg=true;
         this->wait();
+        delete tmr;
     }
 
     void set_config(const QJsonObject config)
@@ -63,6 +69,9 @@ private:
     {
 
         vcap=   VideoCapture( url.toStdString().data());
+        if(!vcap.isOpened()){
+            prt(info,"fail to open %s", url.toStdString().data());
+        }
         QString str( url.data());
         if(str.contains("rtsp")||str.contains("http")){
             frame_wait_time=0;
@@ -88,6 +97,7 @@ private:
                     continue;
                     prt(info,"restarting %s      ", url.toStdString().data());
                 }else{
+                    frame_rate++;
                     if(frame_list.size()<10){
                         frame_list.push_back(mat_rst);
                     }
@@ -110,9 +120,17 @@ private:
 signals:
 
 public slots:
+    void handle_time_out()
+    {
+         prt(info,"%s src rate %d",url.toStdString().data(),frame_rate);
+         frame_rate=0;
+    }
+
 private:
+    int frame_rate;
     QString url;
     bool quit_flg;
+    QTimer *tmr;
 };
 
 #endif // VIDEOSOURCE_H
