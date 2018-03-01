@@ -84,3 +84,9 @@ void FormDeviceDetail::on_treeWidget_device_customContextMenuRequested(const QPo
     }
 
 }
+
+void FormDeviceDetail::on_pushButton_search_clicked()
+{
+      ui->lineEdit_connect->clear();
+      ui->lineEdit_connect->setText(clt.find_service());
+}

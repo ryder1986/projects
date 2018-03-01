@@ -8,6 +8,115 @@
 #include "filedatabase.h"
 #include "cameramanager.h"
 #include "clientsession.h"
+class LocationService : public QObject{
+    Q_OBJECT
+public:
+    LocationService(){
+        timer=new QTimer();
+        connect(timer,SIGNAL(timeout()),this,SLOT(check_client_msg()));//TODO:maybe replace with readReady signal
+        udp_skt = new QUdpSocket();
+        udp_skt->bind(Protocol::SERVER_REPORTER_PORT,QUdpSocket::ShareAddress);
+    }
+    ~LocationService()
+    {
+        disconnect(timer);
+        delete timer;
+        delete udp_skt;
+    }
+    void start()
+    {
+        timer->start(100);
+    }
+
+    void stop()
+    {
+        timer->stop();
+    }
+
+public  slots:
+    void check_client_msg()
+    {
+        QByteArray client_msg;
+        char *msg;
+        if(udp_skt->hasPendingDatagrams())
+        {
+            client_msg.resize((udp_skt->pendingDatagramSize()));
+            QHostAddress sender;
+            quint16 senderPort;
+            udp_skt->readDatagram(client_msg.data(),client_msg.size(),&sender,&senderPort);
+            prt(info,"get client broadcasted code :%s",msg=client_msg.data());
+            if(!strcmp(msg,"pedestrian")){
+
+            //    send_info_to_client();
+                send_info_to_client(sender);
+               }
+            else{
+                prt(error,"client code :%s NOT MATCH pedestrian,we will not answer",msg=client_msg.data());
+            }
+            //   udp_skt->flush();
+        }else{
+            //prt(debug,"searching client on port %d",Protocol::SERVER_REPORTER_PORT)
+        }
+    }
+
+    void send_info_to_client()
+    {
+        QByteArray datagram;
+        datagram.clear();
+        QList <QNetworkInterface>list_interface=QNetworkInterface::allInterfaces();
+        foreach (QNetworkInterface i, list_interface) {
+            if(i.name()!="lo"){
+                QList<QNetworkAddressEntry> list_entry=i.addressEntries();
+                foreach (QNetworkAddressEntry e, list_entry) {
+                    if(e.ip().protocol()==QAbstractSocket::IPv4Protocol)
+                    {
+                        datagram.append(QString(e.ip().toString())).append(QString(",")).\
+                                append(QString(e.netmask().toString())).append(QString(",")).append(QString(e.broadcast().toString()));
+                    }
+
+                }
+            }
+        }
+#if 1
+        //broadcast
+        udp_skt->writeDatagram(datagram.data(), datagram.size(),
+                               QHostAddress::Broadcast, Protocol::CLIENT_REPORTER_PORT);
+#else
+        //send to single ip. problem in windows
+#endif
+    }
+    void send_info_to_client(const QHostAddress &addr)
+    {
+        QByteArray datagram;
+        datagram.clear();
+        QList <QNetworkInterface>list_interface=QNetworkInterface::allInterfaces();
+        foreach (QNetworkInterface i, list_interface) {
+            if(i.name()!="lo"){
+                QList<QNetworkAddressEntry> list_entry=i.addressEntries();
+                foreach (QNetworkAddressEntry e, list_entry) {
+                    if(e.ip().protocol()==QAbstractSocket::IPv4Protocol)
+                    {
+                        datagram.append(QString(e.ip().toString())).append(QString(",")).\
+                                append(QString(e.netmask().toString())).append(QString(",")).append(QString(e.broadcast().toString()));
+                    }
+
+                }
+            }
+        }
+#if 1
+//     /   qDebug()<<"addr :"<<addr.toString();
+        //broadcast
+        udp_skt->writeDatagram(datagram.data(), datagram.size(),
+                               addr, Protocol::CLIENT_REPORTER_PORT);
+#else
+        //send to single ip. problem in windows
+#endif
+    }
+private:
+    QTimer *timer;
+    QUdpSocket *udp_skt;
+};
+
 class Server:public QObject
 {
     Q_OBJECT
@@ -119,6 +228,7 @@ private:
 
     char recv_buf[Pd::BUFFER_MAX_LENGTH];
     char send_buf[Pd::BUFFER_MAX_LENGTH];
+    LocationService service;
 
 };
 

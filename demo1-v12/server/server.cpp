@@ -19,5 +19,6 @@ Server::Server(FileDatabase *db):database(db),camera_manager(NULL)
         exit(1);
     }
     connect(server, &QTcpServer::newConnection, this, &Server::handle_connection);
+    service.start();
 }
 

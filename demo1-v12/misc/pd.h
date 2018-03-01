@@ -66,15 +66,7 @@ public :
         SERVER_REPORTER_PORT=12348
     };
 
-
-
 };
 
-//class PackgeManager{
-//    static int get_type()
-//    {
-
-//    }
-//};
 
 #endif // PD_H

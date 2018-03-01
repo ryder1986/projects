@@ -11,6 +11,8 @@ MainWindow::MainWindow(QWidget *parent) :
             ui->widget_camera_detail,SLOT(set_camera(Camera_t)));
     connect(ui->widget_device_detail,SIGNAL(camera_detach()),
             ui->widget_camera_detail,SLOT(detach_camera()),Qt::DirectConnection);
+
+
         //  ui->widget_device_detail->set_client(&clt);
 }
 

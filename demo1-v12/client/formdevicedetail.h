@@ -107,10 +107,13 @@ private slots:
         emit camera_detach();
 
     }
+    void on_pushButton_search_clicked();
+
 signals:
     void camera_selected(Camera_t cfg);
     void camera_detach();
-private:
+
+   private:
     Ui::FormDeviceDetail *ui;
     //    Client *clt;
     QByteArray config;
