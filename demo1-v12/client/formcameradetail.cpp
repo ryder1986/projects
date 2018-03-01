@@ -6,7 +6,7 @@ FormCameraDetail::FormCameraDetail(QWidget *parent) :
     ui(new Ui::FormCameraDetail)
 {
     ui->setupUi(this);
-
+player=NULL;
 }
 
 FormCameraDetail::~FormCameraDetail()

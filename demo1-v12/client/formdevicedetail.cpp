@@ -8,6 +8,9 @@ FormDeviceDetail::FormDeviceDetail(QWidget *parent) :
     cam_index=0;
     ui->setupUi(this);
     connect(&clt,SIGNAL(get_config_done(bool,QByteArray)),this,SLOT(config_arrived(bool,QByteArray)));
+    connect(&searcher,SIGNAL(find_ip(QString)),
+            this,SLOT(ip_search_done(QString)),Qt::DirectConnection);
+
     click_times=0;
 }
 
@@ -88,5 +91,6 @@ void FormDeviceDetail::on_treeWidget_device_customContextMenuRequested(const QPo
 void FormDeviceDetail::on_pushButton_search_clicked()
 {
       ui->lineEdit_connect->clear();
-      ui->lineEdit_connect->setText(clt.find_service());
+      searcher.search_device();
+     // ui->lineEdit_connect->setText(clt.find_service());
 }
