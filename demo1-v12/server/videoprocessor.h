@@ -21,7 +21,7 @@ public:
     {
 
     }
-    virtual     void process(Mat frm)
+    virtual     string process(Mat frm)
     {
 
     }
@@ -61,14 +61,14 @@ public:
     {
 
     }
-    void process(Mat frm)
+    string process(Mat frm)
     {
-        work_inside(frm);
+        return work_inside(frm);
     }
 
 
 private:
-    bool work_inside(Mat &mt)
+    string work_inside(Mat &mt)
     {
         CascadeClassifier cascade;
         bool ret=false;
@@ -121,6 +121,7 @@ private:
         else{
             prt(info,"opencv handle frame error !");
         }
+        return rst;
 
     }
 private:

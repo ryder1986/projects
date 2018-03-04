@@ -55,21 +55,28 @@ protected:
         src->start();
         Mat frame;
         threadid=(int)QThread::currentThread();
+        string rst;
         while(!quit){
          //   prt(info,"runing %s",cam_cfg.url.toStdString().data());
             QThread::msleep(100);
 
 
-            ba.clear();
-            char t='1';
+//            ba.clear();
+//            char t='1';
 
-            ba.append(t+i++%9);
-            emit output(ba);
+//            ba.append(t+i++%9);
+//            emit output(ba);
 
             if(src->get_frame(frame)){
                 frame_rate++;
-                processor->process(frame);
-                //prt(info,"get a frame");
+                rst=processor->process(frame);
+
+                 prt(info,"get rst %s ",rst.data());
+                 if(rst.length()>0){
+                     ba.clear();
+                     ba.append(rst.data());
+                       emit output(ba);
+                 }
             }else{
                 //prt(info,"get no frame");
             }

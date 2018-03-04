@@ -4,57 +4,62 @@
 #include <QMouseEvent>
 #include "tool1.h"
 
-#include <QtNetwork>
-#include "pd.h"
-class ProcessedDataReciver: public QObject{
-    Q_OBJECT
-public:
-    ProcessedDataReciver()
-    {
-        udp_skt_alg_output=new QUdpSocket(this);
-        udp_skt_alg_output->bind(Protocol::SERVER_DATA_OUTPUT_PORT,QUdpSocket::ShareAddress);
-        connect(udp_skt_alg_output,SIGNAL(readyRead()),this,SLOT(get_rst()),Qt::QueuedConnection);
-    }
-signals:
-    void send_rst(QByteArray);
-public slots:
-    void get_rst()
-    {
-        QByteArray datagram_rst;
-        if(udp_skt_alg_output->hasPendingDatagrams())
-        {
-            //   int size=udp_skt_alg_output->pendingDatagramSize();
-            datagram_rst.resize((udp_skt_alg_output->pendingDatagramSize()));
-            udp_skt_alg_output->readDatagram(datagram_rst.data(),datagram_rst.size());
-            //        udp_skt_alg_output->readDatagram(sss,500);
-            //          datagram_rst= udp_skt_alg_output->readAll();
-#if 0
-            QList <QByteArray > bl= datagram_rst.split(':');
-            QByteArray b_index=bl[0];
-            int index=*(b_index);
+//#include <QtNetwork>
+//#include "pd.h"
+//class ProcessedDataReciver: public QObject{
+//    Q_OBJECT
+//public:
+//    ProcessedDataReciver()
+//    {
+//        udp_skt_alg_output=new QUdpSocket(this);
+//        udp_skt_alg_output->bind(Protocol::SERVER_DATA_OUTPUT_PORT,QUdpSocket::ShareAddress);
+//        connect(udp_skt_alg_output,SIGNAL(readyRead()),this,SLOT(get_rst()),Qt::QueuedConnection);
+//    }
+//signals:
+//    void send_rst(QByteArray);
+//public slots:
+//    void get_rst()
+//    {
+//        QByteArray datagram_rst;
+//        if(udp_skt_alg_output->hasPendingDatagrams())
+//        {
+//            //   int size=udp_skt_alg_output->pendingDatagramSize();
+//            datagram_rst.resize((udp_skt_alg_output->pendingDatagramSize()));
+//            udp_skt_alg_output->readDatagram(datagram_rst.data(),datagram_rst.size());
+//            //        udp_skt_alg_output->readDatagram(sss,500);
+//            //          datagram_rst= udp_skt_alg_output->readAll();
+//#if 0
+//          b  QList <QByteArray > bl= datagram_rst.split(':');
+//            QByteArray b_index=bl[0];
+//            int index=*(b_index);
 
-            prt(info,"get cam   %d rst",index);
+//            prt(info,"get cam   %d rst",index);
 
-            QByteArray b_loc=bl[1];
-#else
+//            QByteArray b_loc=bl[1];
+//#else
 
-            prt(debug,"get data %s",datagram_rst.data());
-            emit send_rst(datagram_rst);
-#endif
+//            prt(debug,"get data %s",datagram_rst.data());
+//            emit send_rst(datagram_rst);
+//#endif
 
-            //   emit send_camera_rst(index,b_loc);
-            //    QList <QByteArray > xy= b_loc.split(',');
-            //            int x=xy[0].toInt();
-            //            int y=xy[1].toInt();
-            //           prt(info," %d : %d",x,y);
+//            //   emit send_camera_rst(index,b_loc);
+//            //    QList <QByteArray > xy= b_loc.split(',');
+//            //            int x=xy[0].toInt();
+//            //            int y=xy[1].toInt();
+//            //           prt(info," %d : %d",x,y);
 
-        }
-    }
+//        }
+//    }
 
-private:
-    QUdpSocket *udp_skt_alg_output;
-    QByteArray rst;
-};
+//private:
+//    QUdpSocket *udp_skt_alg_output;
+//    QByteArray rst;
+//};
+typedef struct layout_info{
+    bool valid;
+    QRect rct;
+    QRect rst;
+}layout_info_t;
 
 //using namespace cv;
 class Layout_Controler{
@@ -79,7 +84,41 @@ public:
       //  p->drawEllipse(pt.x()-pt_r,pt.y()-pt_r,pt_r*2,pt_r*2);
        // prt(info,"paint %s",QString(ba.data()).toStdString().data());
         p->drawEllipse(QString(ba.data()).toInt()*100,100,50,50);
-       }
+    }
+    void paint_overlay(QPainter *p, void *data)
+    {
+        QPen blue_pen(QColor(111,111,0,0));
+        blue_pen.setWidth(20);
+       // painter.setBrush(blue_brush_trans);
+        p->setPen(blue_pen);
+        p->setBackgroundMode(Qt::TransparentMode);
+        p->drawRect(0,0,300,300);
+
+
+
+//        layout_info_t *tmp=(layout_info_t *)data;
+//        //        QPen pen1(QColor(222,0,200,255));
+//          QPen pen1(QColor(222,0,200,255));
+//                p->setPen(pen1);
+//                p->drawRect(QRect(1,1,111,111));
+
+
+
+//        if(tmp->valid){
+//        QPen pen1(QColor(222,0,200,255));
+//        p->setPen(pen1);
+//        p->drawRect(tmp->rct);
+//        QPen pen2(QColor(0,220,200,250));
+//        p->setPen(pen2);
+//              p->drawRect(tmp->rst);
+//        }
+
+
+      //  p->drawEllipse(pt.x()-pt_r,pt.y()-pt_r,pt_r*2,pt_r*2);
+       // prt(info,"paint %s",QString(ba.data()).toStdString().data());
+        //p->drawEllipse(QString(ba.data()).toInt()*100,100,50,50);
+    }
+
     void mouse_press(QPoint pos)
     {
        // pt=pos;
@@ -125,9 +164,10 @@ class VideoWidget : public QOpenGLWidget
     void *init_data;
     void *extra_data;
     Layout_Controler lc;
-    ProcessedDataReciver rcver;
+
 //    QByteArray alg_rst;
-    QList <QByteArray> alg_rst_list;
+  //  QList <QByteArray> alg_rst_list;
+    void *data;
 public:
     void set_init_data(void *d)
     {
@@ -146,10 +186,10 @@ public:
         rcts.append(QRect(333,333,444,444));
         init_data=NULL;
         click_record=0;
+        data=NULL;
 
-        alg_rst_list.clear();
-        connect(&rcver,SIGNAL(send_rst(QByteArray)),this,SLOT(set_alg_rst(QByteArray)));
-    }
+      //  alg_rst_list.clear();
+   }
     void set_rects(QByteArray rst)
     {
         // this->width()/640;
@@ -180,21 +220,17 @@ public:
         this->update();
         return 1;
     }
-    void update1()
+    int update_data(void *dat)
     {
-        //        QPainter painter(this);
-        //       painter.beginNativePainting();
-        //        makeCurrent();
-
-        //        lc.paint(&painter);
-        //        painter.endNativePainting();
+        data=dat;
+        return 1;
     }
 public slots:
-    void set_alg_rst(QByteArray ba)
-    {
-          // prt(info,"get %s",QString(ba.data()).toStdString().data());
-        alg_rst_list.append(ba);
-    }
+//    void set_alg_rst(QByteArray ba)
+//    {
+//          // prt(info,"get %s",QString(ba.data()).toStdString().data());
+//        alg_rst_list.append(ba);
+//    }
 
 protected:
     void paintEvent(QPaintEvent *)
@@ -210,18 +246,34 @@ protected:
             painter.setBrush(blue_brush_trans);
             painter.drawRect(0,0,this->width(),this->height());
 
+
             //                QBrush red_brush_trans(QColor(0,0,200,100));
             //                 painter.setBrush(red_brush_trans);
             //                         pos_x+=10;
             //                          painter.drawEllipse(pos_x%345,0,50,50);
             //              painter.beginNativePainting();
             //               makeCurrent();
+
+
+            paint_frame(painter);
+            if(data)
+                paint_overlay(painter,data);
+
+#if 0
+      QPen blue_pen(QColor(111,111,0,255));
+      blue_pen.setWidth(20);
+     // painter.setBrush(blue_brush_trans);
+      painter.setPen(blue_pen);
+      painter.drawRect(0,0,this->width()-100,this->height()-100);
+  #endif
+#if 0
             lc.paint(&painter);
-            paint_layout(painter);
+            paint_frame(painter);
             if(alg_rst_list.size()>1){
                 lc.paint_extra(&painter,alg_rst_list.first());
                 alg_rst_list.pop_front();
             }
+#endif
             //  painter.endNativePainting();
 
             //    paint_layout2(painter);
@@ -245,7 +297,11 @@ protected:
     {
 
     }
-    void paint_layout(QPainter &painter)
+    void paint_overlay(QPainter &painter,void *data )
+    {
+        lc.paint_overlay(&painter,data);
+    }
+    void paint_frame(QPainter &painter)
     {
         painter.beginNativePainting();
         makeCurrent();
