@@ -23,7 +23,7 @@ public:
     }
     virtual     string process(Mat frm)
     {
-
+        return "test";
     }
 
     virtual void init()

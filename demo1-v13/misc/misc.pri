@@ -71,12 +71,20 @@ unix{
 win32{
     INCLUDEPATH +="$$CVPATH\\$$CV_PREFIX\include"
     INCLUDEPATH +="$$ALGPATH/include"
+INCLUDEPATH +="Y:\libs\third-party\opencv\opencv-vs2013-x86\include"
     message(includepath:$$INCLUDEPATH)
     CONFIG(debug, debug|release){
         LIBS+=-L$$CVPATH\\$$CV_PREFIX\lib -lopencv_core249d -lopencv_highgui249d\
         -lopencv_objdetect249d -lopencv_imgproc249d -lopencv_ml249d  -lopencv_video249d
+
+
+        LIBS+=-LY:\libs\third-party\opencv\opencv-vs2013-x86\lib  -lopencv_core249d -lopencv_highgui249d\
+        -lopencv_objdetect249d -lopencv_imgproc249d -lopencv_ml249d  -lopencv_video249d
     }else{
         LIBS+=-L$$CVPATH\\$$CV_PREFIX\lib  -lopencv_core249 -lopencv_highgui249 \
+        -lopencv_objdetect249 -lopencv_imgproc249 -lopencv_ml249  -lopencv_video249
+
+        LIBS+=-LY:\libs\third-party\opencv\opencv-vs2013-x86\lib  -lopencv_core249 -lopencv_highgui249 \
         -lopencv_objdetect249 -lopencv_imgproc249 -lopencv_ml249  -lopencv_video249
     }
 }

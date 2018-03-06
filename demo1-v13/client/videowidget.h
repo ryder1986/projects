@@ -537,6 +537,7 @@ protected:
                 }
             }
         }
+        return true;
     }
 
 private:
