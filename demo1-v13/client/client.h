@@ -151,6 +151,10 @@ public:
         connect(tcp_socket,SIGNAL(readyRead()),this,SLOT(handle_server_msg()),Qt::DirectConnection);
      //   connect(&finder,SIGNAL(find_ip(QString)),this,SLOT(handle_server_msg()),Qt::DirectConnection);
         }
+    ~Client()
+    {
+        delete tcp_socket;
+    }
 
     void get_config()
     {

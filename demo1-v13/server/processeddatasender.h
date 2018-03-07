@@ -21,11 +21,11 @@ public:
     }
     void send(QByteArray datagram,const QHostAddress addr)
     {
-        QHostAddress tmp("192.168.1.216");
+   //     QHostAddress tmp("192.168.1.218");
         prt(info,"broadcast %s to port 12346",datagram.data());
-        qDebug()<<addr;
+
         udp_skt->writeDatagram(datagram.data(), datagram.size(),
-                               tmp, Protocol::SERVER_DATA_OUTPUT_PORT);
+                               addr, Protocol::SERVER_DATA_OUTPUT_PORT);
     }
 private:
     ProcessedDataSender(){
