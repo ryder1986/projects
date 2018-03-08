@@ -186,11 +186,13 @@ public slots:
 
             break;
         }
+
         case Protocol::HEART:
         {
 
             break;
         }
+
         case Protocol::REBOOT:
         {
 
@@ -202,7 +204,6 @@ public slots:
 
             break;
         }
-
 
         default:break;
         }

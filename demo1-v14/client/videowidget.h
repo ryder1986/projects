@@ -3,7 +3,7 @@
 #include <QtOpenGL/QtOpenGL>
 #include <QMouseEvent>
 #include "tool1.h"
-
+#include <QMutex>
 //#include <QtNetwork>
 //#include "pd.h"
 //class ProcessedDataReciver: public QObject{
@@ -92,22 +92,22 @@ public:
 
     void paint_overlay(QPainter *p, void *data)
     {
-                QPen blue_pen(QColor(111,111,0,0));
-                blue_pen.setWidth(5);
-               // painter.setBrush(blue_brush_trans);
-                p->setPen(blue_pen);
+        QPen blue_pen(QColor(111,111,0,0));
+        blue_pen.setWidth(5);
+        // painter.setBrush(blue_brush_trans);
+        p->setPen(blue_pen);
         //     //   p->setBackgroundMode(Qt::TransparentMode);
         //        p->drawRect(0,0,300,300);
         layout_info_t *tmp=(layout_info_t *)data;
         int w=wgt->width();
         int h=wgt->height();
         if(tmp->valid){
-                prt(info,"get rct------------------------------");
-                foreach (QRect r, tmp->result_rcts) {
-                       prt(info,"(%d,%d,%d,%d)",r.x(),r.y(),r.width(),r.height());
-                    p->drawRect(r.x()*w/640*2,r.y()*h/480*2,r.width()*w/640*2,r.height()*w/480*2);
+            prt(info,"get rct------------------------------");
+            foreach (QRect r, tmp->result_rcts) {
+                prt(info,"(%d,%d,%d,%d)",r.x(),r.y(),r.width(),r.height());
+                p->drawRect(r.x()*w/640*2,r.y()*h/480*2,r.width()*w/640*2,r.height()*w/480*2);
 
-                }
+            }
         }
         tmp->valid=false;
 
@@ -237,7 +237,9 @@ public:
     int update_pic(QImage &im)
     {
         //   int size=frame_mat.total();
+        lock.lock();
         img1=im.copy();
+        lock.unlock();
         //     this->update();
         return 1;
     }
@@ -275,10 +277,13 @@ protected:
             //              painter.beginNativePainting();
             //               makeCurrent();
 
-
             paint_frame(painter);
+
             if(data)
+            {
                 paint_overlay(painter,data);
+                data=NULL;
+            }
 
 #if 0
             QPen blue_pen(QColor(111,111,0,255));
@@ -324,6 +329,7 @@ protected:
     }
     void paint_frame(QPainter &painter)
     {
+        lock.lock();
         painter.beginNativePainting();
         makeCurrent();
         //        Mat bgr_frame=frame;
@@ -341,6 +347,7 @@ protected:
         //       painter.drawEllipse(pos_x%300,0,50,50);
         painter.drawImage(QRect(0,0,this->width(),this->height()),img1);
         painter.endNativePainting();
+        lock.unlock();
     }
     void paint_layout1(QPainter &painter){
         //#if 0
@@ -621,6 +628,7 @@ private:
     }
 
     int click_record;
+    QMutex lock;
 };
 
 #endif // VIDEOWIDGET_H
