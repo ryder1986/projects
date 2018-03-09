@@ -150,7 +150,10 @@ public:
         connect(tcp_socket,SIGNAL(error(QAbstractSocket::SocketError)),this,SLOT(displayError(QAbstractSocket::SocketError)));
         connect(tcp_socket,SIGNAL(readyRead()),this,SLOT(handle_server_msg()),Qt::DirectConnection);
      //   connect(&finder,SIGNAL(find_ip(QString)),this,SLOT(handle_server_msg()),Qt::DirectConnection);
-        }
+
+  //  tcp_socket->write("test1",6);
+
+    }
     ~Client()
     {
         delete tcp_socket;

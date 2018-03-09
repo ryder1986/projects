@@ -94,3 +94,15 @@ void FormDeviceDetail::on_pushButton_search_clicked()
       searcher.search_device();
      // ui->lineEdit_connect->setText(clt.find_service());
 }
+
+void FormDeviceDetail::on_pushButton_del_cam_clicked()
+{
+    int index=ui->lineEdit_del_cam->text().toInt();
+    clt.del_camera(index);
+    prt(info,"del cam %d",index);
+}
+
+void FormDeviceDetail::on_pushButton_add_cam_clicked()
+{
+
+}

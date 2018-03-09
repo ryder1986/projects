@@ -146,8 +146,18 @@ public slots:
         {
         case Protocol::GET_CONFIG:
         {
-            pkg["config"]=cfg_2_jv();
-            break;
+
+            QJsonValue v1;
+            QJsonValue v2;
+            cfg_2_jv(v1,v2);
+            QJsonObject cfg;
+            cfg["device_name"]=v1;
+
+            cfg["cameras"]=v2;
+            pkg["config"]=cfg;
+//              pkg["config"].toObject()["device_name"]=v1;
+//            pkg["config"].toObject()["cameras"]=v2;
+                        break;
         }
 
         case Protocol::SET_CONFIG:
@@ -175,9 +185,9 @@ public slots:
 
         case Protocol::MOD_CAMERA_ALG:
         {
-            int index;
+            int idx=obj["cam_index"].toInt()-1;
            // QJsonObject alg=obj["alg"].toObject();
-            camera_manager->modify_camera(index,obj["alg"],CameraManager::MODIFY_ALG);
+            camera_manager->modify_camera(idx,obj["alg"],CameraManager::MODIFY_ALG);
             QJsonValue jv= camera_manager->config();
             jv_2_cfg(jv);
             save_cfg();
@@ -187,14 +197,27 @@ public slots:
 
         case Protocol::MOD_CAMERA_SRC:
         {
-            int index;
-            camera_manager->modify_camera(index,obj["url"],CameraManager::MODIFY_URL);
+            int idx=obj["cam_index"].toInt()-1;
+            camera_manager->modify_camera(idx,obj["url"],CameraManager::MODIFY_URL);
             QJsonValue jv= camera_manager->config();
             jv_2_cfg(jv);
             save_cfg();
             break;
         }
+        case Protocol::INSERT_CAMERA:
+        {
 
+            break;
+        }
+        case Protocol::DELETE_CAMERA:
+        {
+            int idx=obj["cam_index"].toInt()-1;
+            camera_manager->delete_camera(idx);
+            QJsonValue jv=camera_manager->config();
+            jv_2_cfg(jv);
+            save_cfg();
+            break;
+        }
         case Protocol::HEART:
         {
 
@@ -272,22 +295,28 @@ private:
 
     void save_cfg()
     {
-       // QJsonObject config=cfg_2_obj();
+        QJsonValue v1;
+        QJsonValue v2;
+        cfg_2_jv(v1,v2);
         QJsonObject obj;
-        obj["config"]=cfg_2_jv();
-        database->save(obj);
+        QJsonObject cfg;
+
+        obj["device_name"]=v1;
+        obj["cameras"]=v2;
+        cfg["config"]=obj;
+        database->save(cfg);
     }
     void jv_2_cfg(QJsonValue config)
     {
         cfg.server_name=config.toObject()["device_name"].toString();
         cfg.cams_cfg=config.toObject()["cameras"];
     }
-    QJsonValue cfg_2_jv()
+    void cfg_2_jv(QJsonValue &jv_devname,QJsonValue &jv_cams)
     {
-        QJsonValue config;
-        config.toObject()["device_name"] = cfg.server_name;
-        config.toObject()["cameras"]=cfg.cams_cfg;
-        return config;
+        QJsonObject obj;
+        jv_devname=obj["device_name"] = cfg.server_name;
+        jv_cams=obj["cameras"]=cfg.cams_cfg;
+
     }
 
     QTcpServer *server;//server for reply all clients request ,execute client cmds,like add cam,del cam, reconfigure cam,etc..

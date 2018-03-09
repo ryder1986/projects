@@ -46,6 +46,7 @@ public:
     void delete_camera(int index)
     {
         check_index(index);
+        delete cameras[index-1];
         cameras.removeAt(index-1);
         cam_cfgs.removeAt(index-1);
     }

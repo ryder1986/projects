@@ -29,7 +29,7 @@ public slots:
         QString str(out.data());
         prt(info,"sending %s",str.toStdString().data());
         ProcessedDataSender *sender=ProcessedDataSender::get_instance();
-        sender->send(out,client_addr);
+
     }
 
     void error_happened()

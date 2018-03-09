@@ -155,7 +155,7 @@ class FormDeviceDetail : public QWidget
     }Profile_t;
     typedef struct Config{
         QString dev_name;
-        Profile_t pro;
+         QList <Camera_t> cams;
     }Config_t;
     ServerInfoSearcher searcher;
 public:
@@ -177,7 +177,7 @@ private:
         ui->treeWidget_device->clear();
         QTreeWidgetItem *root_item=new QTreeWidgetItem(QStringList(configuration.dev_name));
         ui->treeWidget_device->addTopLevelItem(root_item);
-        foreach (Camera_t c, configuration.pro.cams) {
+        foreach (Camera_t c, configuration.cams) {
             QTreeWidgetItem *item=new QTreeWidgetItem(QStringList(c.url));
             root_item->addChild(item);
         }
@@ -187,16 +187,16 @@ private:
         QJsonDocument doc= QJsonDocument::fromJson(config);
         QJsonObject obj=doc.object();
         configuration.dev_name=obj["device_name"].toString();
-        QJsonArray array=obj["profile"].toObject()["cameras"].toArray();
+        QJsonArray array=obj["cameras"].toArray();
 
-        configuration.pro.cams.clear();
+        configuration.cams.clear();
         foreach (QJsonValue v, array) {
             QString url=  v.toObject()["url"].toString();
             prt(info,"%s",url.toStdString().data());
             Camera_t c;
             c.url=url;
             c.alg= v.toObject()["alg"].toObject();
-            configuration.pro.cams.append(c);
+            configuration.cams.append(c);
         }
 
     }
@@ -232,7 +232,7 @@ private slots:
         clt.focus_camera(cam_index+1);
 
         emit camera_detach();
-        emit camera_selected(configuration.pro.cams[cam_index]);
+        emit camera_selected(configuration.cams[cam_index]);
     }
 
     void camera_preview_stop(bool)
@@ -247,6 +247,10 @@ private slots:
     {
         ui->lineEdit_connect->setText(ip);
     }
+
+    void on_pushButton_del_cam_clicked();
+
+    void on_pushButton_add_cam_clicked();
 
 signals:
     void camera_selected(Camera_t cfg);

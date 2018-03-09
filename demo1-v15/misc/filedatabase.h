@@ -20,6 +20,18 @@ private:
         f->write(data);
         f->close();
     }
+//    void save(QJsonObject obj)
+//    {
+//        QJsonDocument data(obj);
+//        QFile *f=new QFile(name);
+//        bool ret = f->open(QIODevice::ReadWrite|QIODevice::Truncate);
+//        if(!ret){
+//            prt(info,"fail to open %s",name.toStdString().data());
+//            delete f;
+//        }
+//        f->write(data.toJson());
+//        f->close();
+//    }
     bool load(QByteArray &data)
     {
 
@@ -37,8 +49,8 @@ public:
     FileDatabase(QString file_name);
     void save(QJsonObject node)
     {
-        QJsonDocument json_doc_new;
-        json_doc_new.setObject(node);
+        QJsonDocument json_doc_new(node);
+      //  json_doc_new.setObject(node);
         save(json_doc_new.toJson());
     }
     void load(QJsonObject &node)
