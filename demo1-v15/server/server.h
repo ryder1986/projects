@@ -211,7 +211,7 @@ public slots:
         }
         case Protocol::DELETE_CAMERA:
         {
-            int idx=obj["cam_index"].toInt()-1;
+            int idx=obj["cam_index"].toInt();
             camera_manager->delete_camera(idx);
             QJsonValue jv=camera_manager->config();
             jv_2_cfg(jv);

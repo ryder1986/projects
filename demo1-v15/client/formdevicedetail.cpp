@@ -104,5 +104,11 @@ void FormDeviceDetail::on_pushButton_del_cam_clicked()
 
 void FormDeviceDetail::on_pushButton_add_cam_clicked()
 {
-
+    QString url=ui->lineEdit_add_cam->text();
+    Camera_t c=configuration.cams[0];
+    c.url=url;
+    QJsonObject obj;
+    obj["url"]=c.url;
+    obj["alg"]=c.alg;
+    clt.add_camera(obj,configuration.cams.size());
 }

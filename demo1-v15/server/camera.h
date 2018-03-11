@@ -99,7 +99,7 @@ protected:
                 frame_rate++;
                 rst=processor->process(frame);
 
-                prt(info,"get rst %s ",rst.data());
+                //prt(info,"get rst %s ",rst.data());
                 if(rst.length()>0){
                     ba.clear();
                     ba.append(rst.data());

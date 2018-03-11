@@ -231,12 +231,36 @@ public:
     }
 
 
-    void add_camera(QByteArray camera_config)
+    void add_camera(QJsonObject obj,int index)
     {
+       // QJsonObject obj;
+        obj["type"]=Protocol::INSERT_CAMERA;
+        obj["cam_index"]=index;
+        obj["camera"]=obj;
+        QJsonDocument doc(obj);
 
+        bool ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
+        if(!ret){
+            prt(info,"fail send");
+        }
     }
+
+//    void add_camera(QByteArray cam_cfg,QString url)
+//    {
+
+//    }
+
     void del_camera(int index)
     {
+        QJsonObject obj;
+        obj["type"]=Protocol::DELETE_CAMERA;
+        obj["cam_index"]=index;
+        QJsonDocument doc(obj);
+
+        bool ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
+        if(!ret){
+            prt(info,"fail send");
+        }
 
     }
     void mod_camera(QByteArray new_camera_config,int index)
