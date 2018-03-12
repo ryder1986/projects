@@ -30,7 +30,7 @@ public:
     {
         frame_rate=0;
         url=path;
-         quit_flg=false;
+        quit_flg=false;
 
         tmr=new QTimer();
         connect(tmr,SIGNAL(timeout()),this,SLOT(handle_time_out()));

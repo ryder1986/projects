@@ -39,16 +39,35 @@ public:
 
     void insert_camera(int index,QJsonValue cfg)
     {
-        check_index(index);
-        cameras.insert(index-1,new Camera(cfg));
-        cam_cfgs.insert(index-1,cfg);
+
+     if(index>cameras.size()+1 || index<0){
+           prt(fatal,"index %d out of range",index);
+     }else{
+            prt(fatal,"insert cam  %d  ",index);
+            cameras.insert(index,new Camera(cfg));
+            cam_cfgs.insert(index,cfg);
+     }
     }
+
+//    void insert_camera(int index,QJsonObject cfg)
+//    {
+//        // check_index(index);
+//        if(check_index(index)){
+//            cameras.insert(index,new Camera(cfg));
+//            cam_cfgs.insert(index,cfg);
+//        }
+//    }
     void delete_camera(int index)
     {
-        check_index(index);
-        delete cameras[index-1];
-        cameras.removeAt(index-1);
-        cam_cfgs.removeAt(index-1);
+        //   check_index(index);
+        if(check_op_index(index)){
+               prt(fatal,"del cam  %d  ",index);
+            delete cameras[index-1];
+            cameras.removeAt(index-1);
+            cam_cfgs.removeAt(index-1);
+        }else{
+
+        }
     }
     void modify_camera(int index,QJsonValue v,int mod_type)
     {
@@ -91,11 +110,15 @@ private:
         prt(info,"cam size %d",cameras.size());
     }
 
-    void check_index(int index)
+    bool check_op_index(int index)
     {
+        if(cameras.size()==0)
+            return false;
         if(index<1||index>cameras.size()){
-            prt(info,"index out of range");
+            prt(fatal,"index %d out of range(1-%d)",index,cameras.size());
+            return false;
         }
+        return true;
     }
 
     //trans config to json value

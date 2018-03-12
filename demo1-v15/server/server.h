@@ -140,8 +140,10 @@ public slots:
         QJsonDocument doc=QJsonDocument::fromJson(request);
         QJsonObject obj= doc.object();
         int type=obj["type"].toInt();
+
         QJsonObject pkg;
         pkg["type"]=type;
+
         switch(type)
         {
         case Protocol::GET_CONFIG:
@@ -171,21 +173,21 @@ public slots:
         case Protocol::CAM_OUTPUT_OPEN:
         {
             ClientSession *s=(ClientSession *)addr;
-            int idx=obj["cam_index"].toInt()-1;
-            connect(camera_manager->cameras[idx],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
+            int idx=obj["cam_index"].toInt();
+            connect(camera_manager->cameras[idx-1],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
             break;
         }
         case Protocol::CAM_OUTPUT_CLOSE:
         {
             ClientSession *s=(ClientSession *)addr;
-            int idx=obj["cam_index"].toInt()-1;
-            disconnect(camera_manager->cameras[idx],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
+            int idx=obj["cam_index"].toInt();
+            disconnect(camera_manager->cameras[idx-1],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
             break;
         }
 
         case Protocol::MOD_CAMERA_ALG:
         {
-            int idx=obj["cam_index"].toInt()-1;
+            int idx=obj["cam_index"].toInt();
            // QJsonObject alg=obj["alg"].toObject();
             camera_manager->modify_camera(idx,obj["alg"],CameraManager::MODIFY_ALG);
             QJsonValue jv= camera_manager->config();
@@ -197,7 +199,7 @@ public slots:
 
         case Protocol::MOD_CAMERA_SRC:
         {
-            int idx=obj["cam_index"].toInt()-1;
+            int idx=obj["cam_index"].toInt();
             camera_manager->modify_camera(idx,obj["url"],CameraManager::MODIFY_URL);
             QJsonValue jv= camera_manager->config();
             jv_2_cfg(jv);
@@ -206,7 +208,13 @@ public slots:
         }
         case Protocol::INSERT_CAMERA:
         {
-
+            int idx=obj["cam_index"].toInt();
+            QJsonValue v=obj["camera"];
+            camera_manager->insert_camera(idx,v);
+            QJsonValue jv= camera_manager->config();
+            QJsonValue jv_name=cfg.server_name;
+            jv_2_cfg(jv_name,jv);
+            save_cfg();
             break;
         }
         case Protocol::DELETE_CAMERA:
@@ -214,7 +222,8 @@ public slots:
             int idx=obj["cam_index"].toInt();
             camera_manager->delete_camera(idx);
             QJsonValue jv=camera_manager->config();
-            jv_2_cfg(jv);
+            QJsonValue jv_name=cfg.server_name;
+            jv_2_cfg(jv_name,jv);
             save_cfg();
             break;
         }
@@ -289,8 +298,9 @@ private:
     {
         QJsonObject obj;
         database->load(obj);
+//        QJsonObject o=obj["config"].toObject();
+//        jv_2_cfg(o["dev_name"],o["cameras"]);
         jv_2_cfg(obj["config"]);
-
     }
 
     void save_cfg()
@@ -311,6 +321,12 @@ private:
         cfg.server_name=config.toObject()["device_name"].toString();
         cfg.cams_cfg=config.toObject()["cameras"];
     }
+
+    void jv_2_cfg(QJsonValue jv_devname,QJsonValue jv_cams)
+    {
+        cfg.server_name=jv_devname.toString();
+        cfg.cams_cfg=jv_cams.toArray();
+    }\
     void cfg_2_jv(QJsonValue &jv_devname,QJsonValue &jv_cams)
     {
         QJsonObject obj;

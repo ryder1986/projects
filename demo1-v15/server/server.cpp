@@ -2,6 +2,7 @@
 
 Server::Server(FileDatabase *db):database(db),camera_manager(NULL)
 {
+
     load_cfg();
     camera_manager=new CameraManager(cfg.cams_cfg);
     bool ret=false;

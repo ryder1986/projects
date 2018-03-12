@@ -231,15 +231,15 @@ public:
     }
 
 
-    void add_camera(QJsonObject obj,int index)
+    void add_camera(QJsonObject obj_cam,int index)
     {
-       // QJsonObject obj;
+        QJsonObject obj;
         obj["type"]=Protocol::INSERT_CAMERA;
         obj["cam_index"]=index;
-        obj["camera"]=obj;
+        obj["camera"]=obj_cam;
         QJsonDocument doc(obj);
-
-        bool ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
+        int len=doc.toJson().length();
+        bool ret= send(doc.toJson().data(),len);//talk to server
         if(!ret){
             prt(info,"fail send");
         }
@@ -363,6 +363,13 @@ private:
         int write_bytes=0;
 
         write_bytes=tcp_socket->write(buf,len);
+        bool flush_ret=tcp_socket->flush();//TODO,not work for flush
+        if(flush_ret){
+            prt(info,"flush ok");
+        }else{
+             prt(info,"flush err");
+        }
+
         if(write_bytes!=len){
             prt(info,"send %d bytes in state %d , %d bytes left",write_bytes,tcp_socket->state(),len-write_bytes);
         }else{

@@ -34,24 +34,24 @@ void FormDeviceDetail::on_pushButton_get_config_clicked()
 void FormDeviceDetail::on_treeWidget_device_doubleClicked(const QModelIndex &index)
 {
     //  QAbstractItemView::
-//    QTreeWidgetItem *p_item_device_current= ui->treeWidget_device->currentItem();
-//    //   p_item_device_current=  ui->treeWidget_device->currentItem();
-//    if(p_item_device_current){
-//        if(!p_item_device_current->parent()){//root
+    //    QTreeWidgetItem *p_item_device_current= ui->treeWidget_device->currentItem();
+    //    //   p_item_device_current=  ui->treeWidget_device->currentItem();
+    //    if(p_item_device_current){
+    //        if(!p_item_device_current->parent()){//root
 
-//        }else{//child
-//            prt(info,"%s:%d",p_item_device_current->text(0).toStdString().data(),index.row());
-//            if(click_times++%2){
-//                clt.focus_camera(index.row()+1);
-//                emit camera_selected(configuration.pro.cams[index.row()]);
-//            }else{
-//                emit camera_detach();
-//                clt.disfocus_camera(index.row()+1);
-//            }
+    //        }else{//child
+    //            prt(info,"%s:%d",p_item_device_current->text(0).toStdString().data(),index.row());
+    //            if(click_times++%2){
+    //                clt.focus_camera(index.row()+1);
+    //                emit camera_selected(configuration.pro.cams[index.row()]);
+    //            }else{
+    //                emit camera_detach();
+    //                clt.disfocus_camera(index.row()+1);
+    //            }
 
 
-//        }
-//    }
+    //        }
+    //    }
 
 }
 
@@ -90,25 +90,31 @@ void FormDeviceDetail::on_treeWidget_device_customContextMenuRequested(const QPo
 
 void FormDeviceDetail::on_pushButton_search_clicked()
 {
-      ui->lineEdit_connect->clear();
-      searcher.search_device();
-     // ui->lineEdit_connect->setText(clt.find_service());
+    ui->lineEdit_connect->clear();
+    searcher.search_device();
+    // ui->lineEdit_connect->setText(clt.find_service());
 }
 
 void FormDeviceDetail::on_pushButton_del_cam_clicked()
 {
     int index=ui->lineEdit_del_cam->text().toInt();
     clt.del_camera(index);
-    prt(info,"del cam %d",index);
+    clt.get_config();
+  //  prt(info,"del cam %d",index);
+ ui->lineEdit_get_config->clear();
 }
 
 void FormDeviceDetail::on_pushButton_add_cam_clicked()
 {
     QString url=ui->lineEdit_add_cam->text();
-    Camera_t c=configuration.cams[0];
-    c.url=url;
+    QJsonObject alg;
+
     QJsonObject obj;
-    obj["url"]=c.url;
-    obj["alg"]=c.alg;
+    obj["url"]=url;
+    obj["alg"]=alg;
     clt.add_camera(obj,configuration.cams.size());
+  //  clt.get_config();
+    //  clt.get_config();
+    //
+    ui->lineEdit_get_config->clear();
 }
