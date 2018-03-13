@@ -129,7 +129,7 @@ public:
     static mutex lock;
 private:
     static LogFile log_file1;
-    int cc=0;
+    //int cc=0;
     static  char filename[LENGTH_FIXED_VALUE::PATH_LENGTH];
     const int static buf_size=200;
     static int lv;//debug level,default is "DEBUG_LEVEL::INFO"
