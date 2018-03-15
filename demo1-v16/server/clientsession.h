@@ -60,6 +60,7 @@ public slots:
                 ret++;
             }
         }
+        return ret;
     }
     int count_end_symbol(QByteArray ba)
     {
@@ -72,6 +73,7 @@ public slots:
                 ret++;
             }
         }
+        return ret;
     }
     void find_pos(QByteArray ba,int &endpos,int &left)
     {

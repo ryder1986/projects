@@ -282,6 +282,7 @@ public:
                 ret++;
             }
         }
+        return ret;
     }
     int count_end_symbol(QByteArray ba)
     {
