@@ -138,11 +138,12 @@
 //};
 class Client : public QObject
 {
+    QByteArray tmp_msg;
     Q_OBJECT
 public:
     char buf[2000];
     Client()
-    {
+    {tmp_msg.clear();
         server_ip.clear();
         tcp_socket=new QTcpSocket();
         in.setDevice(tcp_socket);
@@ -198,8 +199,8 @@ public:
         QJsonDocument doc(obj);
 
         bool ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
-          ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
-          ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
+        //  ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
+       //   ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
          if(!ret){
             prt(info,"fail send");
         }
@@ -270,6 +271,105 @@ public:
 
     }
 
+    int count_begin_symbol(QByteArray ba)
+    {
+        char *tmp=ba.data();
+        int sz=ba.size();
+        int ret=0;
+        int i;
+        for( i=0;i<sz;i++){
+            if(tmp[i]=='{'){
+                ret++;
+            }
+        }
+    }
+    int count_end_symbol(QByteArray ba)
+    {
+        char *tmp=ba.data();
+        int sz=ba.size();
+        int ret=0;
+        int i;
+        for( i=0;i<sz;i++){
+            if(tmp[i]=='}'){
+                ret++;
+            }
+        }
+    }
+    void find_pos(QByteArray ba,int &endpos,int &left)
+    {
+
+    }
+    bool try_get_obj_buf(QByteArray src,QByteArray &dst)
+    {
+        int ret=false;
+        int stack=0;
+        char *p_tmp=src.data();
+        bool flg=false;
+     //    bool flg_real_end=false;
+        //char *p_start=src.data();
+           dst.clear();
+         dst.append(src);
+         int i;
+        if(count_begin_symbol(src)>0){
+            for(i=0;i<src.size();i++){
+                if(p_tmp[i]=='{')
+                 {
+                    stack++;
+                    flg=true;
+                }
+                if(p_tmp[i]=='}')
+                    stack--;
+
+
+                if(stack==0&&flg)
+                  {
+
+                    break;
+                }
+
+            }
+            if(i<src.size()){
+                ret=true;
+                if(src[i+1]=='\n')
+                dst.truncate(i+2);
+                else
+                    dst.truncate(i+i);
+            }
+        }
+        return ret;
+    }
+
+    //dst:a sting which contain a compelete json object
+    //src:a slice ofstream buffer
+    //tmp_msg:last slice of buffer(maybe begining of json string)
+    bool get_valid_buf(QByteArray &src,QByteArray &dst)
+    {
+        //        bool ret=false;
+
+        //        int begin_symbol_num=count_begin_symbol(src);
+        //        int end_symbol_num=end_begin_symbol(src);
+        //        if((begin_symbol_num>end_symbol_num&&objs_count==0)||begin_symbol_num==0)
+        //        {
+        //            ret=false;
+        //        }else{
+        //            dst.clear();
+        //            dst.append(src);
+        //            int endpos=0,left=0;
+        //            find_pos(dst,endpos,left);
+        //            dst.remove(endpos,left);
+        //            src.truncate(src.size()-left);
+        //        }
+        //        return false;
+
+
+        if(try_get_obj_buf(src,dst)){
+            src.remove(0,dst.size());
+            return true;
+        }
+        return false;
+
+    }
+
 public slots:
     void handle_connected()
     {
@@ -282,10 +382,15 @@ public slots:
 
         lock.lock();
         ret_ba=tcp_socket->readAll();
-        QJsonDocument doc=QJsonDocument::fromJson(ret_ba);
+
+        QByteArray valid_buf;
+        valid_buf.clear();
+        tmp_msg.append(ret_ba);
+        while(get_valid_buf(tmp_msg,valid_buf)) {
+        QJsonDocument doc=QJsonDocument::fromJson(valid_buf);
         QJsonObject obj=doc.object();
-        prt(info,"get %d bytes ",ret_ba.size());
-        if(ret_ba.size()>0)
+        prt(info,"get %d bytes ",valid_buf.size());
+        if(valid_buf.size()>0)
             need_read=true;
         lock.unlock();
         //        prt(info,"state %d",tcp_socket->state());
@@ -299,6 +404,7 @@ public slots:
         }
             break;
         default:break;
+        }
         }
         //        if(ret_ba.size()>0)
         //            emit server_msg(ret_ba.remove(0,Protocol::HEAD_LENGTH),Protocol::get_operation(ret_ba.data()));

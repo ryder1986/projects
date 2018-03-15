@@ -113,7 +113,7 @@ void FormDeviceDetail::on_pushButton_add_cam_clicked()
     obj["url"]=url;
     obj["alg"]=alg;
     clt.add_camera(obj,configuration.cams.size());
-  //  clt.get_config();
+    clt.get_config();
     //  clt.get_config();
     //
     ui->lineEdit_get_config->clear();
