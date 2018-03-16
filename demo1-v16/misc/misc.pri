@@ -28,11 +28,10 @@ INSTALLS +=install_files
 win32{
 OPENCV_PATH=E:\repo-github\libs\third-party\opencv\opencv-vs2013-x86
     INCLUDEPATH +="$$OPENCV_PATH\include"
-    LIBS+=-L$$OPENCV_PATH\lib   -lopencv_core249 -lopencv_highgui249 \
-        -lopencv_objdetect249 -lopencv_imgproc249 -lopencv_ml249  -lopencv_video249
+    LIBS+=-L$$OPENCV_PATH\lib   -lopencv_core249d -lopencv_highgui249d \
+        -lopencv_objdetect249d -lopencv_imgproc249d -lopencv_ml249d  -lopencv_video249d
  message(includepath->>>>>>:$$INCLUDEPATH)
 }
-
 
 unix{
 #PROJECT_ROOT="/root/repo-github"
