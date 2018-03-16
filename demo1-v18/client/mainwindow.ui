@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>915</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget_device" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="FormDeviceDetail" name="widget_device_detail" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_camera" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="FormCameraDetail" name="widget_camera_detail" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>915</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuZenith">
+    <property name="title">
+     <string>zenith</string>
+    </property>
+   </widget>
+   <addaction name="menuZenith"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>FormDeviceDetail</class>
+   <extends>QWidget</extends>
+   <header>formdevicedetail.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FormCameraDetail</class>
+   <extends>QWidget</extends>
+   <header>formcameradetail.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
