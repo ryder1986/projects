@@ -8,6 +8,7 @@
 #include "QJsonObject"
 #include "videosource.h"
 #include "videoprocessor.h"
+#include "processeddatasender.h"
 class Camera : public QThread
 {
     Q_OBJECT
@@ -42,7 +43,22 @@ public:
     {
         return cfg_2_jv();
     }
+    void add_watcher(QString ip)
+    {
+        if(ip_list.contains(ip)){
 
+        }else{
+            qDebug()<<"add ip "<<ip;
+            ip_list.append(ip);
+        }
+    }
+    void del_watcher(QString ip)
+    {
+        if(ip_list.contains(ip)){
+                ip_list.removeOne(ip);
+        }else{
+        }
+    }
 private:
     void start_cam()
     {
@@ -74,7 +90,17 @@ private:
         cam_cfg.url = cfg.toObject()["url"].toString();
         cam_cfg.alg=cfg.toObject()["alg"];
     }
+    void send_out(QByteArray ba)
+    {
+      //  emit output(ba);
+        ProcessedDataSender *s=ProcessedDataSender::get_instance();
+        foreach (QString ip, ip_list) {
+            QString str(ba);
 
+            prt(info,"send %s to %s",str.toStdString().data(),ip.toStdString().data())
+            s->send(ba,QHostAddress(ip));
+        }
+    }
 protected:
     void run()
     {
@@ -103,7 +129,9 @@ protected:
                 if(rst.length()>0){
                     ba.clear();
                     ba.append(rst.data());
-                    emit output(ba);
+                  //  emit output(ba);
+
+                send_out(ba);
                 }
             }else{
                 //prt(info,"get no frame");
@@ -124,6 +152,7 @@ public slots:
     }
 
 private:
+    QList <QString> ip_list;
     int frame_rate;
     int threadid;
     QTimer *tmr;

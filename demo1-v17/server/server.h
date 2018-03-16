@@ -116,7 +116,52 @@ private:
     QTimer *timer;
     QUdpSocket *udp_skt;
 };
+//class Dest:public QObject{
+//    struct dst{
+//        QString dst_ip;
+//        Camera *cam_addr;
+//    };
+//    Q_OBJECT
+//public:
+//    Dest(){
 
+//    }
+//    void add_dst(QString ip,Camera *cam)
+//    {
+//        bool flg=false;
+//        foreach (struct dst d, list) {
+//            if(d.dst_ip==ip){
+//                if(cam!=d.cam_addr){
+//                    d.cam_addr=cam;
+//                }
+//                flg=true;
+//                break;
+//            }
+//        }
+//        if(!flg){
+//            struct dst tmp;
+//            tmp.dst_ip=ip;
+//            tmp.cam_addr=cam;
+//            list.append(tmp);
+//        }
+//    }
+//    void del_dest(QString ip)
+//    {
+
+//    }
+//public slots:
+//    void send_rst()
+//    {
+
+//    }
+//    void send_2_dest(QByteArray ba)
+//    {
+//        ProcessedDataSender*sender= ProcessedDataSender::get_instance();
+//        sender->send(ba,);
+//    }
+//private:
+//    QList <struct dst> list;
+//};
 class Server:public QObject
 {
     Q_OBJECT
@@ -124,7 +169,7 @@ class Server:public QObject
         QString server_name;
         QJsonValue cams_cfg;
     }configture_t;
-
+   // Dest dst;
 public:
 
     Server(FileDatabase *db);
@@ -157,9 +202,9 @@ public slots:
 
             cfg["cameras"]=v2;
             pkg["config"]=cfg;
-//              pkg["config"].toObject()["device_name"]=v1;
-//            pkg["config"].toObject()["cameras"]=v2;
-                        break;
+            //              pkg["config"].toObject()["device_name"]=v1;
+            //            pkg["config"].toObject()["cameras"]=v2;
+            break;
         }
 
         case Protocol::SET_CONFIG:
@@ -174,21 +219,26 @@ public slots:
         {
             ClientSession *s=(ClientSession *)addr;
             int idx=obj["cam_index"].toInt();
-            connect(camera_manager->cameras[idx-1],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
+            if(idx<=camera_manager->cameras.size())
+                camera_manager->cameras[idx-1]->add_watcher(s->ip());
+        //    connect(camera_manager->cameras[idx-1],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
+         //   dst.set_pair(s->ip(),camera_manager->cameras[idx-1]);
             break;
         }
         case Protocol::CAM_OUTPUT_CLOSE:
         {
             ClientSession *s=(ClientSession *)addr;
             int idx=obj["cam_index"].toInt();
-            disconnect(camera_manager->cameras[idx-1],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
+            if(idx<=camera_manager->cameras.size())
+            camera_manager->cameras[idx-1]->del_watcher(s->ip());
+          //  disconnect(camera_manager->cameras[idx-1],SIGNAL(output(QByteArray)),s,SLOT(handle_alg_out(QByteArray)));
             break;
         }
 
         case Protocol::MOD_CAMERA_ALG:
         {
             int idx=obj["cam_index"].toInt();
-           // QJsonObject alg=obj["alg"].toObject();
+            // QJsonObject alg=obj["alg"].toObject();
             camera_manager->modify_camera(idx,obj["alg"],CameraManager::MODIFY_ALG);
             QJsonValue jv= camera_manager->config();
             jv_2_cfg(jv);
@@ -298,8 +348,8 @@ private:
     {
         QJsonObject obj;
         database->load(obj);
-//        QJsonObject o=obj["config"].toObject();
-//        jv_2_cfg(o["dev_name"],o["cameras"]);
+        //        QJsonObject o=obj["config"].toObject();
+        //        jv_2_cfg(o["dev_name"],o["cameras"]);
         jv_2_cfg(obj["config"]);
     }
 
