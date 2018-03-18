@@ -1,0 +1,25 @@
+{
+    "device_name":"qiaoxianglu",
+     "cameras": [
+        {
+            "url": "rtsp://192.168.1.216:8554/test1",
+            "alg":{
+	          "selected_alg":"pd",
+                  "pd":{
+                    "detect_area":"111,111,222,222 " 
+                   },
+                  "fvd":{}
+             }
+        },
+        {
+            "url": "rtsp://192.168.1.216:8555/test1",
+            "alg":{
+	          "selected_alg":"fvd",
+                  "pd":{
+                   },
+                  "fvd":{}
+             }
+        }
+      ]
+}
+
