@@ -25,6 +25,25 @@ public:
     ~ClientSession()
     {
     }
+    void set_valid(bool valid)
+    {
+        need_sync=!valid;
+
+        if(!valid){
+            QByteArray rt;
+            rt.clear();
+            QJsonObject obj;
+            obj["type"]=Protocol::NEED_UPDATE;
+            QJsonDocument doc(obj);
+            rt=doc.toJson();
+            skt->write(rt,rt.size());
+        }
+    }
+
+    bool is_valid()
+    {
+        return !need_sync;
+    }
 
 public slots:
     void handle_alg_out(QByteArray out)
