@@ -8,7 +8,8 @@ FormDeviceDetail::FormDeviceDetail(QWidget *parent) :
     cam_index=0;
     ui->setupUi(this);
     connect(&clt,SIGNAL(get_config_done(bool,QByteArray)),this,SLOT(config_arrived(bool,QByteArray)));
-    connect(&searcher,SIGNAL(find_ip(QString)),
+    connect(&clt,SIGNAL(need_update_config()),this,SLOT(need_sync_config()));
+     connect(&searcher,SIGNAL(find_ip(QString)),
             this,SLOT(ip_search_done(QString)),Qt::DirectConnection);
 
     click_times=0;
@@ -94,9 +95,11 @@ void FormDeviceDetail::on_pushButton_search_clicked()
     searcher.search_device();
     // ui->lineEdit_connect->setText(clt.find_service());
 }
-
+#include <QMessageBox>
 void FormDeviceDetail::on_pushButton_del_cam_clicked()
 {
+//   QMessageBox  *box1=new QMessageBox(QMessageBox::Warning,"Information","update?",QMessageBox::Yes|QMessageBox::No,NULL);
+//   box1->show();
     int index=ui->lineEdit_del_cam->text().toInt();
     clt.del_camera(index);
     clt.get_config();

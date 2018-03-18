@@ -150,9 +150,9 @@ public:
         in.setVersion(QDataStream::Qt_1_0);
         connect(tcp_socket,SIGNAL(error(QAbstractSocket::SocketError)),this,SLOT(displayError(QAbstractSocket::SocketError)));
         connect(tcp_socket,SIGNAL(readyRead()),this,SLOT(handle_server_msg()),Qt::DirectConnection);
-     //   connect(&finder,SIGNAL(find_ip(QString)),this,SLOT(handle_server_msg()),Qt::DirectConnection);
+        //   connect(&finder,SIGNAL(find_ip(QString)),this,SLOT(handle_server_msg()),Qt::DirectConnection);
 
-  //  tcp_socket->write("test1",6);
+        //  tcp_socket->write("test1",6);
 
     }
     ~Client()
@@ -175,21 +175,21 @@ public:
         //    return rst.remove(0,Protocol::HEAD_LENGTH);//TODO:get the ret value;
     }
 
-//    void set_config(QByteArray config)
-//    {
+    //    void set_config(QByteArray config)
+    //    {
 
-//        //    int request_length=Protocol::encode_configuration_request(buf);//encoder buffer
-//        QJsonObject obj;
-//        obj["type"]=Protocol::SET_CONFIG;
-//        obj["config"]=config;
-//        QJsonDocument doc(obj);
+    //        //    int request_length=Protocol::encode_configuration_request(buf);//encoder buffer
+    //        QJsonObject obj;
+    //        obj["type"]=Protocol::SET_CONFIG;
+    //        obj["config"]=config;
+    //        QJsonDocument doc(obj);
 
-//        bool ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
-//        if(!ret){
-//            prt(info,"fail send");
-//        }
-//        //    return rst.remove(0,Protocol::HEAD_LENGTH);//TODO:get the ret value;
-//    }
+    //        bool ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
+    //        if(!ret){
+    //            prt(info,"fail send");
+    //        }
+    //        //    return rst.remove(0,Protocol::HEAD_LENGTH);//TODO:get the ret value;
+    //    }
     void set_config(QByteArray cfg)
     {
         QJsonDocument doc_config=QJsonDocument::fromJson(cfg);
@@ -200,8 +200,8 @@ public:
 
         bool ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
         //  ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
-       //   ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
-         if(!ret){
+        //   ret= send(doc.toJson().data(),doc.toJson().length());//talk to server
+        if(!ret){
             prt(info,"fail send");
         }
     }
@@ -248,10 +248,10 @@ public:
         }
     }
 
-//    void add_camera(QByteArray cam_cfg,QString url)
-//    {
+    //    void add_camera(QByteArray cam_cfg,QString url)
+    //    {
 
-//    }
+    //    }
 
     void del_camera(int index)
     {
@@ -306,15 +306,15 @@ public:
         int stack=0;
         char *p_tmp=src.data();
         bool flg=false;
-     //    bool flg_real_end=false;
+        //    bool flg_real_end=false;
         //char *p_start=src.data();
-           dst.clear();
-         dst.append(src);
-         int i;
+        dst.clear();
+        dst.append(src);
+        int i;
         if(count_begin_symbol(src)>0){
             for(i=0;i<src.size();i++){
                 if(p_tmp[i]=='{')
-                 {
+                {
                     stack++;
                     flg=true;
                 }
@@ -323,7 +323,7 @@ public:
 
 
                 if(stack==0&&flg)
-                  {
+                {
 
                     break;
                 }
@@ -332,7 +332,7 @@ public:
             if(i<src.size()){
                 ret=true;
                 if(src[i+1]=='\n')
-                dst.truncate(i+2);
+                    dst.truncate(i+2);
                 else
                     dst.truncate(i+i);
             }
@@ -388,24 +388,27 @@ public slots:
         valid_buf.clear();
         tmp_msg.append(ret_ba);
         while(get_valid_buf(tmp_msg,valid_buf)) {
-        QJsonDocument doc=QJsonDocument::fromJson(valid_buf);
-        QJsonObject obj=doc.object();
-        prt(info,"get %d bytes ",valid_buf.size());
-        if(valid_buf.size()>0)
-            need_read=true;
-        lock.unlock();
-        //        prt(info,"state %d",tcp_socket->state());
-        int op=obj["type"].toInt();
-        switch(op)
-        {
-        case Protocol::GET_CONFIG:
-        {
-            QJsonDocument d(obj["config"].toObject());
-            emit get_config_done(true,d.toJson());
-        }
-            break;
-        default:break;
-        }
+            QJsonDocument doc=QJsonDocument::fromJson(valid_buf);
+            QJsonObject obj=doc.object();
+            prt(info,"get %d bytes ",valid_buf.size());
+            if(valid_buf.size()>0)
+                need_read=true;
+            lock.unlock();
+            //        prt(info,"state %d",tcp_socket->state());
+            int op=obj["type"].toInt();
+            switch(op)
+            {
+            case Protocol::GET_CONFIG:
+            {
+                QJsonDocument d(obj["config"].toObject());
+                emit get_config_done(true,d.toJson());
+            }
+                break;
+            case Protocol::NEED_UPDATE:
+
+                break;
+            default:break;
+            }
         }
         //        if(ret_ba.size()>0)
         //            emit server_msg(ret_ba.remove(0,Protocol::HEAD_LENGTH),Protocol::get_operation(ret_ba.data()));
@@ -447,25 +450,26 @@ public slots:
         }
     }
 
-//    QString find_service()
-//    {
-//        QString rst;
-//        rst.clear();
-//      //  finder.search_device();
-//          QThread::sleep(10);
-//        QStringList ql=finder.search_rst();
-//        if(ql.size()>0){
-//            QString ip=ql.first();
-//            prt(info,"get %s",ip.toStdString().data());
-//            rst=ip;
-//        }
+    //    QString find_service()
+    //    {
+    //        QString rst;
+    //        rst.clear();
+    //      //  finder.search_device();
+    //          QThread::sleep(10);
+    //        QStringList ql=finder.search_rst();
+    //        if(ql.size()>0){
+    //            QString ip=ql.first();
+    //            prt(info,"get %s",ip.toStdString().data());
+    //            rst=ip;
+    //        }
 
-//        return rst;
-//    }
+    //        return rst;
+    //    }
 
 signals:
     void get_config_done(bool,QByteArray buffer);
-private:
+    void need_update_config();
+ private:
     bool  send(char *buf,int len)
     {
         bool ret=false;
@@ -476,7 +480,7 @@ private:
         if(flush_ret){
             prt(info,"flush ok");
         }else{
-             prt(info,"flush err");
+            prt(info,"flush err");
         }
 
         if(write_bytes!=len){

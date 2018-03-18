@@ -5,7 +5,7 @@
 #include "client.h"
 #include "tool1.h"
 #include "ui_formdevicedetail.h"
-
+#include <QMessageBox>
 
 class ServerReplyCheckRouting : public QObject
 {
@@ -213,6 +213,11 @@ private slots:
         else{
             ui->lineEdit_get_config->setText("fail to get config");
         }
+    }
+    void need_sync_config( )
+    {
+        QMessageBox  *box1=new QMessageBox(QMessageBox::Warning,"Information","update?",QMessageBox::Yes|QMessageBox::No,NULL);
+        box1->show();
     }
 
 private slots:
