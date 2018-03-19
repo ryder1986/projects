@@ -381,7 +381,7 @@ public slots:
     void handle_server_msg()
     {
 
-        lock.lock();
+ //       lock.lock();
         ret_ba=tcp_socket->readAll();
 
         QByteArray valid_buf;
@@ -393,7 +393,7 @@ public slots:
             prt(info,"get %d bytes ",valid_buf.size());
             if(valid_buf.size()>0)
                 need_read=true;
-            lock.unlock();
+ //           lock.unlock();
             //        prt(info,"state %d",tcp_socket->state());
             int op=obj["type"].toInt();
             switch(op)
@@ -405,7 +405,7 @@ public slots:
             }
                 break;
             case Protocol::NEED_UPDATE:
-
+                need_update_config();
                 break;
             default:break;
             }
@@ -493,7 +493,7 @@ signals:
     QString server_ip;
     QTcpSocket *tcp_socket;
     QDataStream in;
-    mutex lock;
+ //   mutex lock;
     QByteArray ret_ba;
     bool need_read;
     //ServerInfoSearcher finder;

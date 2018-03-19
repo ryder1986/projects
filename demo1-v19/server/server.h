@@ -183,7 +183,7 @@ public slots:
     {
 
         ClientSession *cs=(ClientSession *)addr;
-        int client_index=clients.indexOf((ClientSession *)addr);
+    //    int client_index=clients.indexOf((ClientSession *)addr);
         QJsonDocument doc=QJsonDocument::fromJson(request);
         QJsonObject obj= doc.object();
         int type=obj["type"].toInt();
@@ -193,7 +193,7 @@ public slots:
 
         bool config_changed=false;
         switch(type){
-        case Protocol::GET_CONFIG:
+        case Protocol::GET_CONFIG:// if client wants get config, client is ok
             cs->set_valid(true);
             break;
         case Protocol::SET_CONFIG:
@@ -203,21 +203,22 @@ public slots:
         case Protocol::MOD_CAMERA_SRC:
         case Protocol::MOD_CAMERA_DIRECTION:
         default:
-            config_changed=true;
+            if(cs->is_valid())
+                config_changed=true;// if client is valid , change can be made
             break;
         }
 
-        if(config_changed){
+        if(config_changed){//if valid change happen, other clients will be invalid
             foreach (ClientSession *session, clients) {
                 if(session!=addr)
                     session->set_valid(false);
             }
         }
-        if(!cs->is_valid()&&type!=Protocol::GET_CONFIG){
+        if(!cs->is_valid()&&type!=Protocol::GET_CONFIG){// no valid, no update
                QJsonObject obj;
                obj["type"]=Protocol::NEED_UPDATE;
                QJsonDocument doc_ret(obj);
-               ret=doc_ret.toJson();
+               ret=doc_ret.toJson();//tell client to update
                return 1;
         }
 
