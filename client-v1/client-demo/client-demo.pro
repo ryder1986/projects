@@ -28,13 +28,17 @@ SOURCES += \
         mainwindow.cpp \
     tool1.cpp \
     serverinfosearcher.cpp \
-    pd.cpp
+    pd.cpp \
+    client.cpp \
+    player.cpp
 
 HEADERS += \
         mainwindow.h \
     tool1.h \
     serverinfosearcher.h \
-    pd.h
+    pd.h \
+    client.h \
+    player.h
 
 FORMS += \
         mainwindow.ui
@@ -49,4 +53,27 @@ INCLUDEPATH+="C:\Program Files\Microsoft SDKs\Windows\v7.1A\Include"
 #    LIBS+=-L$$OPENCV_PATH\lib   -lopencv_core249 -lopencv_highgui249 \
 #        -lopencv_objdetect249 -lopencv_imgproc249 -lopencv_ml249  -lopencv_video249
  message(includepath->>>>>>:$$INCLUDEPATH)
+}
+
+
+unix{
+#PROJECT_ROOT="/root/repo-github"
+CVPATH="/root/repo-github/libs/third-party/opencv"
+CV_PREFIX="/opencv-linux-x86"
+ALGPATH="/root/repo-github/libs/alg"
+#COMMON_LIB_PATH="/root/repo-github/res/common/lib-linux32"
+##DESTDIR=/root/repo-github/build/
+}
+
+
+unix{
+    DEFINES += IS_UNIX
+    QMAKE_CXXFLAGS+="-std=c++11"
+    INCLUDEPATH +="$$CVPATH/$$CV_PREFIX/include"
+    INCLUDEPATH +="$$ALGPATH/include"
+    message(alg  in $$ALGPATH/include)
+    LIBS+=-L$$CVPATH/$$CV_PREFIX/lib -lopencv_core -lopencv_highgui \
+       -lopencv_objdetect -lopencv_imgproc -lopencv_ml   -lopencv_video  -lX11
+
+    QMAKE_LIBS+=-lpthread
 }

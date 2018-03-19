@@ -154,14 +154,7 @@
           </size>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
-          <item row="0" column="0">
-           <widget class="QPushButton" name="pushButton_loadfile">
-            <property name="text">
-             <string>load file</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
+          <item row="1" column="1">
            <widget class="QPushButton" name="pushButton_savefile">
             <property name="text">
              <string>savefile</string>
@@ -169,13 +162,20 @@
            </widget>
           </item>
           <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_loadfile">
+            <property name="text">
+             <string>load file</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
            <widget class="QPushButton" name="pushButton_save">
             <property name="text">
              <string>save</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
+          <item row="0" column="1">
            <widget class="QPushButton" name="pushButton_reboot">
             <property name="text">
              <string>reboot</string>
@@ -206,14 +206,7 @@
       <property name="title">
        <string>GroupBox</string>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QTextEdit" name="textEdit"/>
-       </item>
-       <item>
-        <widget class="QTextEdit" name="textEdit_2"/>
-       </item>
-      </layout>
+      <layout class="QHBoxLayout" name="horizontalLayout_3"/>
      </widget>
     </item>
    </layout>
@@ -224,7 +217,7 @@
      <x>0</x>
      <y>0</y>
      <width>1584</width>
-     <height>23</height>
+     <height>19</height>
     </rect>
    </property>
   </widget>

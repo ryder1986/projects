@@ -6,6 +6,9 @@
 #include <QPainter>
 #include <opencv2/core/core.hpp>
 #include "videosource.h"
+#include <QMutex>
+#include <QThread>
+#include <QObject>
 
 #include <QMouseEvent>
 using namespace cv;

@@ -150,7 +150,8 @@ public:
         in.setVersion(QDataStream::Qt_1_0);
         connect(tcp_socket,SIGNAL(error(QAbstractSocket::SocketError)),this,SLOT(displayError(QAbstractSocket::SocketError)));
         connect(tcp_socket,SIGNAL(readyRead()),this,SLOT(handle_server_msg()),Qt::DirectConnection);
-        //   connect(&finder,SIGNAL(find_ip(QString)),this,SLOT(handle_server_msg()),Qt::DirectConnection);
+        connect(tcp_socket,SIGNAL(connected()),this,SLOT(handle_connected()),Qt::DirectConnection);
+            //   connect(&finder,SIGNAL(find_ip(QString)),this,SLOT(handle_server_msg()),Qt::DirectConnection);
 
         //  tcp_socket->write("test1",6);
 
@@ -375,6 +376,7 @@ public slots:
     void handle_connected()
     {
         prt(info,"connected");
+        emit connect_done();
     }
 
 
@@ -469,6 +471,7 @@ public slots:
 signals:
     void get_config_done(bool,QByteArray buffer);
     void need_update_config();
+    void connect_done();
  private:
     bool  send(char *buf,int len)
     {
