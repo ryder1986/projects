@@ -30,7 +30,8 @@ SOURCES += \
     serverinfosearcher.cpp \
     pd.cpp \
     client.cpp \
-    player.cpp
+    player.cpp \
+    videosource.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -38,7 +39,8 @@ HEADERS += \
     serverinfosearcher.h \
     pd.h \
     client.h \
-    player.h
+    player.h \
+    videosource.h
 
 FORMS += \
         mainwindow.ui

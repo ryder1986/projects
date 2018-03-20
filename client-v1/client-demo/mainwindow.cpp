@@ -19,6 +19,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(&searcher,SIGNAL(find_ip(QString)),this,SLOT(set_ip(QString)));
     ui->comboBox->clear();
     ui->comboBox->setEnabled(false);
+//    Player *p=new Player("rtsp://192.168.1.216:8554/test1",this);
+//    ui->groupBox_picture->layout()->addWidget(p);
+//    p->start();
 }
 
 MainWindow::~MainWindow()

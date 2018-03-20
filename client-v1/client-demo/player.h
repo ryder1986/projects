@@ -16,9 +16,9 @@ class Player :public QObject,public QThread, public QOpenGLWidget
 {
     Q_OBJECT
 public:
-    Player(QWidget *w):QOpenGLWidget(w)
+    Player(QString str,QWidget *w):QOpenGLWidget(w)
     {
-        src=new VideoSource("rtsp://192.168.1.216:8555/test1");
+        src=new VideoSource(str);
         rct.setCoords(100,100,200,200);
         holding=false;
     }
