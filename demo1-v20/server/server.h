@@ -402,7 +402,8 @@ private:
         database->load(obj);
         //        QJsonObject o=obj["config"].toObject();
         //        jv_2_cfg(o["dev_name"],o["cameras"]);
-        jv_2_cfg(obj["config"]);
+        //jv_2_cfg(obj["config"]);
+        obj_2_cfg(obj);
     }
 
     void save_cfg()
@@ -456,7 +457,7 @@ private:
 
     void obj_2_cfg(QJsonObject o)
     {
-        QJsonObject obj=o["config"];
+        QJsonObject obj=o["config"].toObject();
 
         cfg.server_name=obj["device_name"].toString();
         cfg.dev_id=obj["deviceID"].toInt();
