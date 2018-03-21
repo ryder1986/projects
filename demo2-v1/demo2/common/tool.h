@@ -21,7 +21,7 @@
 #include <sys/stat.h>
 
 #else
-//#include <direct.h>
+#include <direct.h>
 #endif
 using namespace std;
 
