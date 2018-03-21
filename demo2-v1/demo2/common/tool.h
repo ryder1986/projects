@@ -14,7 +14,7 @@
 #include <iterator>
 
 //#include <ifaddrs.h>
-#include "tool1.h"
+#include "tool.h"
 
 
 #ifdef IS_UNIX

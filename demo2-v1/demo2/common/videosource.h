@@ -5,7 +5,7 @@
 #include <QThread>
 #include <QJsonObject>
 #include <QTimer>
-#include "tool1.h"
+#include "tool.h"
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>

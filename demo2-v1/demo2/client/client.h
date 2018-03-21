@@ -2,7 +2,7 @@
 #define CLIENT_H
 #include <QObject>
 #include <QtNetwork>
-#include <tool1.h>
+#include <tool.h>
 
 #include "pd.h"
 //class ServerReplyCheckRouting : public QObject

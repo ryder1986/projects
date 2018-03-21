@@ -10,7 +10,7 @@
 		{
 			"url": "rtsp://192.168.1.216:8554/test1",
 			"direction":1,
-			"camera_no":3,
+			"camera_id":3,
 			"user_name":"xxx",
 			"password":"xxx",
 			"camera_ip":"192.168.1.12",

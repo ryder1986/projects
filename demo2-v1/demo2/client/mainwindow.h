@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include "ui_mainwindow.h"
-#include "tool1.h"
+#include "tool.h"
 #include "player.h"
 #include "client.h"
 #include "serverinfosearcher.h"
