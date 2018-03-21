@@ -22,25 +22,11 @@ MainWindow::MainWindow(QWidget *parent) :
 //    Player *p=new Player("rtsp://192.168.1.216:8554/test1",this);
 //    ui->groupBox_picture->layout()->addWidget(p);
 //    p->start();
-
-    connect(this,SIGNAL(box_ready(QWidget **)),this,SLOT(add_box(QWidget **)));
-      Qt::HANDLE handle=QThread::currentThreadId();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-}
-
-void MainWindow::play_start()
-{
-
-    starter_thread.setObjectName("players manager");
-    //    player_starter=new Tmp(players,cfg.cams_cfg);
-    pt=new PlayThread(this);
-    pt->moveToThread(&starter_thread);
-    connect(&starter_thread,SIGNAL(started()),pt,SLOT(play()));
-    starter_thread.start();
 }
 
 void MainWindow::on_groupBox_picture_clicked()
