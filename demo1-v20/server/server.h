@@ -234,6 +234,7 @@ public slots:
             //            cfg_2_jv(v1,v2);
             QJsonObject cfg;
             cfg_2_obj(cfg);
+            pkg["config"]=cfg;
 
             //            cfg["device_name"]=v1;
             //            cfg["cameras"]=v2;
@@ -244,7 +245,7 @@ public slots:
         case Protocol::SET_CONFIG:
         {
             //jv_2_cfg(obj["config"]);
-            obj_2_cfg(obj);
+            obj_2_cfg(obj["config"].toObject());
             save_cfg();
             camera_manager->restart_cameras(cfg.cams_cfg);
             break;
@@ -441,9 +442,9 @@ private:
 
     //    }
 
-    void cfg_2_obj(QJsonObject &o)
+    void cfg_2_obj(QJsonObject &obj)
     {
-        QJsonObject obj;
+
         obj["device_name"]=cfg.server_name;
         obj["deviceID"]=cfg.dev_id;
         obj["signal_machine_ip"]=cfg.sig_ip;
@@ -452,12 +453,12 @@ private:
         obj["ntp_port"]=cfg.ntp_port;
         obj["cameras"]=cfg.cams_cfg;
 
-        o["config"]=obj;
+
     }
 
-    void obj_2_cfg(QJsonObject o)
+    void obj_2_cfg(QJsonObject obj)
     {
-        QJsonObject obj=o["config"].toObject();
+
 
         cfg.server_name=obj["device_name"].toString();
         cfg.dev_id=obj["deviceID"].toInt();

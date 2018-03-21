@@ -16,3 +16,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp
+
+install_files.files+=config.json  hogcascade_pedestrians.xml
+install_files.path=$$OUT_PWD/
+INSTALLS +=install_files
+

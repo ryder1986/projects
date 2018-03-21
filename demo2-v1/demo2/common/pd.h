@@ -42,18 +42,18 @@ public :
         PP=1
     };
     enum CMD{
-        GET_CONFIG,
+        GET_CONFIG=1,
         SET_CONFIG,
         INSERT_CAMERA,
         DELETE_CAMERA,
-        MOD_CAMERA_SRC,
+        MOD_CAMERA_ATTR,
         MOD_CAMERA_ALG,
-        MOD_CAMERA_DIRECTION,
         CAM_OUTPUT_OPEN,
-        CAM_OUTPUT_CLOSE,       
+        CAM_OUTPUT_CLOSE,
         NEED_UPDATE,
         HEART,
-        REBOOT
+        REBOOT,
+        MOD_DEVICE_ATTR
     };
 
     enum RET{
