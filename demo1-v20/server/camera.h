@@ -14,8 +14,14 @@ class Camera : public QThread
     Q_OBJECT
     typedef struct Camera_config{
         QString url;
-        QJsonValue alg;
         int direction;
+        int camera_id;
+        QString user_name;
+        QString password;
+        QString camera_ip;
+        int camera_port;
+        QJsonValue alg;
+
     }Camera_config_t;
 public:
     explicit Camera(QJsonValue config);
@@ -60,7 +66,7 @@ public:
     void del_watcher(QString ip)
     {
         if(ip_list.contains(ip)){
-                ip_list.removeOne(ip);
+            ip_list.removeOne(ip);
         }else{
         }
     }
@@ -86,26 +92,40 @@ private:
     {
         QJsonValue jv;
         jv.toObject()["url"]= cam_cfg.url;
-        jv.toObject()["alg"]=cam_cfg.alg;
         jv.toObject()["direction"]=cam_cfg.direction;
+        jv.toObject()["camera_id"]= cam_cfg.camera_id;
+        jv.toObject()["user_name"]= cam_cfg.user_name;
+        jv.toObject()["password"]= cam_cfg.password;
+        jv.toObject()["camera_ip"]= cam_cfg.camera_ip;
+        jv.toObject()["camera_port"]= cam_cfg.camera_port;
+        jv.toObject()["alg"]=cam_cfg.alg;
+
         return jv;
 
     }
     virtual void jv_2_cfg(QJsonValue cfg)
     {
         cam_cfg.url = cfg.toObject()["url"].toString();
-        cam_cfg.alg=cfg.toObject()["alg"];
         cam_cfg.direction=cfg.toObject()["direction"].toInt();
+        cam_cfg.camera_id=cfg.toObject()["camera_id"].toInt();
+        cam_cfg.user_name=cfg.toObject()["user_name"].toString();
+        cam_cfg.password=cfg.toObject()["password"].toString();
+        cam_cfg.camera_ip=cfg.toObject()["camera_ip"].toString();
+        cam_cfg.camera_port=cfg.toObject()["camera_port"].toInt();
+        cam_cfg.alg=cfg.toObject()["alg"];
+
+
+
     }
     void send_out(QByteArray ba)
     {
-      //  emit output(ba);
+        //  emit output(ba);
         ProcessedDataSender *s=ProcessedDataSender::get_instance();
         foreach (QString ip, ip_list) {
             QString str(ba);
 
             prt(info,"send %s to %s",str.toStdString().data(),ip.toStdString().data())
-            s->send(ba,QHostAddress(ip));
+                    s->send(ba,QHostAddress(ip));
         }
     }
 protected:
@@ -136,9 +156,9 @@ protected:
                 if(rst.length()>0){
                     ba.clear();
                     ba.append(rst.data());
-                  //  emit output(ba);
+                    //  emit output(ba);
 
-                send_out(ba);
+                    send_out(ba);
                 }
             }else{
                 //prt(info,"get no frame");
