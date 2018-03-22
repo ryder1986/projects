@@ -141,7 +141,7 @@ signals:
 public slots:
     void handle_time_out()
     {
-         prt(info,"%s src rate %d",url.toStdString().data(),frame_rate);
+     //    prt(info,"%s src rate %d",url.toStdString().data(),frame_rate);
          frame_rate=0;
     }
 

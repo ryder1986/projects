@@ -4,12 +4,14 @@
 #include <QObject>
 #include <QThread>
 #include <QJsonValue>
+#include <QTimer>
 #include <QJsonObject>
 #include <videosource.h>
 #include "tool.h"
 #include "playerwidget.h"
 class Player : public QThread
 {
+
     typedef struct Camera_config{
         QString url;
         int direction;
@@ -22,38 +24,61 @@ class Player : public QThread
 
     }Camera_config_t;
     Camera_config_t cam_cfg;
+    QImage img1;
+    int frame_rate;
+       Q_OBJECT
 public:
     Player(QJsonValue cfg){
+        frame_rate=0;
         jv_2_cfg(cfg);
         src=new VideoSource(cam_cfg.url);
-        this->start();
-      //  wgt=new PlayerWidget();
-      //  emit get_box(wgt);
+        wgt=NULL;
+        QTimer *t=new QTimer();
+        connect(t,SIGNAL(timeout()),this,SLOT(check_rate()));
+        t->start(1000);
     }
 
     ~Player()
     {
         delete wgt;
         delete src;
-
     }
     QWidget **get_widget()
     {
         return (   QWidget **)&wgt;
     }
 public slots:
+    void check_rate()
+    {
+        //frame_rate++;
+        prt(info,"frame rate :%d ",frame_rate);
+        frame_rate=0;
+    }
+
 signals:
-    void get_box(QWidget *w);
-   // void need_update();
 private:
     void run()
     {
-            while(1){
-              QThread::sleep(1);
-        //  emit need_update();
-              //   wgt->update();
-              prt(info,"11111111111111111111111111111");
+        Mat bgr_frame;
+        Mat rgb_frame;
+        this->setObjectName("play_thread");
+        while(1){
+
+            if(src->get_frame(bgr_frame)){
+                src->get_frame(bgr_frame);
+                cvtColor(bgr_frame,rgb_frame,CV_BGR2RGB);
+                img1=QImage((const uchar*)(rgb_frame.data),
+                            rgb_frame.cols,rgb_frame.rows,
+                            QImage::Format_RGB888);
+                if(wgt){
+                    wgt->set_image(img1);
+                    wgt->update();
+                    frame_rate++;
+                }
+            }else{
+                this->usleep(10);
             }
+        }
     }
     virtual QJsonValue cfg_2_jv()
     {

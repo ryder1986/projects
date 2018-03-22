@@ -65,12 +65,9 @@ public:
         cfg.ntp_port=obj["ntp_port"].toInt();
         cfg.cams_cfg=obj["cameras"];
     }
-    void play()
+    void play()//this will be call in helper thread
     {
-
-
         QJsonArray cams=  cfg.cams_cfg.toArray();
-
 
         foreach (Player *p, players) {
             delete p;
@@ -78,32 +75,27 @@ public:
         players.clear();
         foreach (QJsonValue v, cams) {
             players.append(new Player(v));
-             emit box_ready(players.last()->get_widget());
+            emit add_picture(players.last());
+            players.last()->start();
+            //add_box(players.last()->get_widget());
         }
-  Qt::HANDLE handle=QThread::currentThreadId();
-
-//        PlayerWidget *pw= players[0]->get_widget();
-//        ui->groupBox_picture->layout()->addWidget(pw);
+        Qt::HANDLE handle=QThread::currentThreadId();
 
     }
     void  play_start();
 
 private slots:
-    void  update_pic()
-    {
-      QWidget **w=  players[0]->get_widget();
-      QOpenGLWidget *ww=(QOpenGLWidget *)w;
-      ww->update();
-    }
+//    void  update_pic(QWidget *w)
+//    {
+//        w->update();
+//    }
 
-    void add_box(QWidget **w)
+    void on_add_picture(Player *p)
     {
-          Qt::HANDLE handle=QThread::currentThreadId();
-       // PlayerWidget *p=new PlayerWidget;
-          *w=new PlayerWidget();
-       ui->groupBox_picture->layout()->addWidget(*w);
-              prt(info,"sssssssssss");
-              update_pic();
+        QWidget **w=p->get_widget();
+        *w=new PlayerWidget();
+        ui->groupBox_picture->layout()->addWidget(*w);
+        //    update_pic();
     }
 
     void open_config(bool ,QByteArray ba)
@@ -157,7 +149,7 @@ private slots:
         }
     }
 signals:
-    void box_ready(QWidget **);
+    void add_picture(Player *);
 
 private:
     Ui::MainWindow *ui;
@@ -182,7 +174,7 @@ public slots:
     void play()
     {
 
-          Qt::HANDLE handle=QThread::currentThreadId();
+        Qt::HANDLE handle=QThread::currentThreadId();
         mw->play();
     }
 private:

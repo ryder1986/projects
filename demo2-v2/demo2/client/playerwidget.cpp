@@ -1,7 +1,7 @@
 #include "playerwidget.h"
 
-PlayerWidget::PlayerWidget()
-{
+//PlayerWidget::PlayerWidget()
+//{
 
-}
+//}
 
